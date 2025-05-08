@@ -1,0 +1,34 @@
+Table Cat {
+  id int [ref: > Caretaker.catsInCare]
+  name varchar
+  colorId int [ref: > Color.id] 
+  sexId int [ref: > Sex.id] 
+  specialMarkings varchar
+  zipCode int 
+  friendly boolean
+  knownStreets varchar
+  notes varchar
+}
+
+Table Caretaker {
+  id int [pk, increment]
+  name varchar
+  catsInCare int 
+  zipCode int 
+  streetsServed varchar
+  phoneNumber varchar
+  specialSkills varchar
+  active boolean
+  isLeadCaretaker boolean
+  isAdmin boolean
+}
+
+Table Color {
+  id int [pk, increment]
+  color varchar
+}
+
+Table Sex {
+  id int [pk, increment]
+  sex varchar
+}
