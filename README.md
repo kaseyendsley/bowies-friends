@@ -1,3 +1,5 @@
+Bowie's Friends - an application for community cats and the caretakers that love them.  
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

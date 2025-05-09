@@ -1,0 +1,43 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dark);
+    margin: 0;
+    width: 100%;
+    padding: 0.5rem;
+    border-bottom: 3px solid var(--primary); /* Adds a subtle border for separation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow for depth */
+  }
+  
+  .navbar-list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+  }
+  
+  .navbar-item {
+    flex-basis: 20%;
+    text-align: center;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 1px;
+    color: var(--offWhite);
+    display: inline-block;
+    padding: 0.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    color: var(--primary);
+    transform: scale(1.1); /* Grows slightly on hover */
+  }
+  
+  .navbar-logout {
+    margin-left: auto;
+  }
+  
