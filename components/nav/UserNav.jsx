@@ -15,7 +15,13 @@ export const UserNav = () => {
           <Link to="/cat-list" className="navbar-link">Cat List</Link>
         </li>
         <li className="navbar-item">
-          <Link to="/caretaker-list" className="navbar-link">Caretaker List</Link> {/* Added Caretaker List link */}
+          <Link to="/caretaker-list" className="navbar-link">Caretaker List</Link> 
+        </li>
+        <li className="navbar-item">
+          <Link to="/resources" className="navbar-link">Resources</Link> 
+        </li>
+        <li className="navbar-item">
+          <Link to="/about" className="navbar-link">About</Link> 
         </li>
       </ul>
     </nav>
