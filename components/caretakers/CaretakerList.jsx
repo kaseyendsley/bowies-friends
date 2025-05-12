@@ -33,7 +33,7 @@ export const CaretakerList = () => {
       <h2>Community Caretaker List</h2>
       <input
         type="text"
-        placeholder="Search by Name, ZipCode, Served Streets, Special Skills, etc"
+        placeholder="Search Caretakers by any combination of Name, ZipCode, Served Streets, Special Skills, etc"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
         className="caretaker-search-bar"

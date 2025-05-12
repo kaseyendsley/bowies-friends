@@ -299,7 +299,8 @@
       "specialSkills": "Good with Ferals",
       "active": true,
       "isLeadCaretaker": false,
-      "isAdmin": false
+      "isAdmin": false,
+      "url": "https://images.pexels.com/photos/1310522/pexels-photo-1310522.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": 2,
@@ -310,7 +311,8 @@
       "specialSkills": "",
       "active": true,
       "isLeadCaretaker": true,
-      "isAdmin": false
+      "isAdmin": false,
+      "url": "https://images.pexels.com/photos/1334945/pexels-photo-1334945.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": 3,
@@ -321,7 +323,8 @@
       "specialSkills": "Fosters",
       "active": true,
       "isLeadCaretaker": false,
-      "isAdmin": false
+      "isAdmin": false,
+      "url": "https://images.pexels.com/photos/1085517/pexels-photo-1085517.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": 4,
@@ -332,7 +335,9 @@
       "specialSkills": "",
       "active": true,
       "isLeadCaretaker": false,
-      "isAdmin": false
+      "isAdmin": false,
+      "email": "daniellee3@gmail.com",
+      "url": "https://images.pexels.com/photos/3970083/pexels-photo-3970083.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": 5,
@@ -343,7 +348,8 @@
       "specialSkills": "",
       "active": true,
       "isLeadCaretaker": true,
-      "isAdmin": true
+      "isAdmin": true,
+      "url": "https://images.pexels.com/photos/674685/pexels-photo-674685.jpeg?auto=compress&cs=tinysrgb&w=1600"
     }
   ],
   "caretakerCats": [

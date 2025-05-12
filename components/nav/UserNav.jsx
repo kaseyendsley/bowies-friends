@@ -1,7 +1,14 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './UserNav.css';
 
 export const UserNav = () => {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    localStorage.removeItem("bowie_user");
+    navigate("/login");
+  };
+
   return (
     <nav className="navbar">
       <ul className="navbar-list">
@@ -22,6 +29,9 @@ export const UserNav = () => {
         </li>
         <li className="navbar-item">
           <Link to="/about" className="navbar-link">About</Link> 
+        </li>
+        <li className="navbar-item">
+          <button onClick={handleLogout} className="logout-btn">Logout</button>
         </li>
       </ul>
     </nav>

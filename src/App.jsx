@@ -9,12 +9,14 @@ import { CaretakerList } from '/components/Caretakers/CaretakerList.jsx';
 import { CaretakerDetails } from '/components/Caretakers/CaretakerDetails.jsx'; 
 import { Resources } from '/components/welcome/Resources.jsx';
 import { About } from '/components/welcome/About.jsx';
+import { Login } from '/components/auth/Login.jsx';
 
 export const App = () => {
   return (
     <div className="App">
       <UserNav />
       <Routes>
+        <Route path="/login" element={<Login />} />
         <Route path="/" element={<Home />} />
         <Route path="/getting-started" element={<GettingStarted />} />
         <Route path="/cat-list" element={<CatList />} />
