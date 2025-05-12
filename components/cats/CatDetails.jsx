@@ -24,15 +24,16 @@ export const CatDetails = () => {
   return (
     <div className="cat-details-container">
       <h2>Cat Details</h2>
-      <img src={cat.url} alt={`A photo of ${cat.name}`} className="cat-image" />
+      <img src={cat.url || null} alt={`A photo of ${cat.name}`} className="cat-image" />
       <div className="cat-info">
         <p><strong>Cat ID:</strong> {cat.id}</p>
         <p><strong>Name:</strong> {cat.name}</p>
         <p><strong>Color:</strong> {cat.color?.color || 'Unknown'}</p>
         <p><strong>Sex:</strong> {cat.sex?.sex || 'Unknown'}</p>
+        <p><strong>Age:</strong> {cat.age || 'Unknown'} years</p>
         <p><strong>Special Markings:</strong> {cat.specialMarkings || 'None'}</p>
         <p><strong>Zip Code:</strong> {cat.zipCode}</p>
-        <p><strong>Friendly?</strong> {friendlyMessage}</p>
+        <p><strong>Friendly?:</strong> {friendlyMessage}</p>
         <p><strong>Known Streets:</strong> {cat.knownStreets || 'None'}</p>
         <p><strong>Notes:</strong> {cat.notes || 'No additional notes'}</p>
       </div>

@@ -2,6 +2,7 @@
   padding: 20px;
   max-width: 900px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .cats-list {
@@ -55,3 +56,29 @@
     border-radius: 50%; 
     display: block;
 }
+.cat-search-bar {
+    width: 100%;
+    max-width: 600px; 
+    height: 48px; 
+    padding: 0 15px;
+    font-size: 1.2rem;
+    border: 2px solid #333;
+    border-radius: 24px; 
+    outline: none;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+    margin-bottom: 15px;
+    text-size-adjust: 100%; 
+  }
+  
+  .cat-search-bar:focus {
+    border-color: #555; 
+  }
+
+  .cat-search-bar::placeholder {
+    font-size: 0.875rem;    
+    color: #888;             
+    opacity: 1;              
+  }
+  

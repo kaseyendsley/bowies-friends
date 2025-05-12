@@ -5,8 +5,8 @@
     margin: 0;
     width: 100%;
     padding: 0.5rem;
-    border-bottom: 3px solid var(--primary); /* Adds a subtle border for separation */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow for depth */
+    border-bottom: 3px solid var(--primary); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   }
   
   .navbar-list {
@@ -34,7 +34,7 @@
   
   .navbar-link:hover {
     color: var(--primary);
-    transform: scale(1.1); /* Grows slightly on hover */
+    transform: scale(1.1); 
   }
   
   .navbar-logout {
