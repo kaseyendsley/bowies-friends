@@ -286,63 +286,8 @@
       "knownStreets": "",
       "notes": "",
       "url": "https://images.pexels.com/photos/7229998/pexels-photo-7229998.jpeg?auto=compress&cs=tinysrgb&w=1600"
-    },
-    {
-      "name": "Shae",
-      "age": 0.4,
-      "colorId": 5,
-      "sexId": 3,
-      "specialMarkings": "Right eye is cloudy",
-      "zipCode": 37211,
-      "friendly": true,
-      "knownStreets": "MCIver",
-      "notes": "",
-      "url": "",
-      "createdBy": null,
-      "id": 16
-    },
-    {
-      "name": "Bridget",
-      "age": 2.3,
-      "colorId": 8,
-      "sexId": 4,
-      "specialMarkings": "Stripes",
-      "zipCode": 37206,
-      "friendly": true,
-      "knownStreets": "Woodwomnt",
-      "notes": "",
-      "url": "",
-      "createdBy": null,
-      "id": 17
-    },
-    {
-      "name": "Sarte",
-      "age": 0.8,
-      "colorId": 7,
-      "sexId": 3,
-      "specialMarkings": "",
-      "zipCode": 37115,
-      "friendly": true,
-      "knownStreets": "",
-      "notes": "",
-      "url": "",
-      "createdBy": null,
-      "id": 18
-    },
-    {
-      "name": "Baloooo",
-      "age": 2.3,
-      "colorId": 6,
-      "sexId": 3,
-      "specialMarkings": "",
-      "zipCode": 37206,
-      "friendly": true,
-      "knownStreets": "",
-      "notes": "",
-      "url": "",
-      "createdBy": null,
-      "id": 19
     }
+
   ],
   "caretakers": [
     {
