@@ -5,8 +5,10 @@ import { GettingStarted } from '/components/welcome/GettingStarted.jsx';
 import { CatList } from '/components/Cats/CatList.jsx';
 import { CatDetails } from '/components/Cats/CatDetails.jsx';
 import { CatForm } from '/components/Cats/CatForm.jsx';
-import { CaretakerList } from '/components/Caretakers/CaretakerList.jsx'; // Import CaretakerList
-import { CaretakerDetails } from '/components/Caretakers/CaretakerDetails.jsx'; // Import CaretakerDetails
+import { CaretakerList } from '/components/Caretakers/CaretakerList.jsx'; 
+import { CaretakerDetails } from '/components/Caretakers/CaretakerDetails.jsx'; 
+import { Resources } from '/components/welcome/Resources.jsx';
+import { About } from '/components/welcome/About.jsx';
 
 export const App = () => {
   return (
@@ -20,6 +22,8 @@ export const App = () => {
         <Route path="/cat-form" element={<CatForm />} />
         <Route path="/caretaker-list" element={<CaretakerList />} />
         <Route path="/caretaker-details/:id" element={<CaretakerDetails />} /> 
+        <Route path="/resources" element={<Resources />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   );
