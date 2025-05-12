@@ -1,9 +1,12 @@
+import './GettingStarted.css';
+
 export const GettingStarted = () => {
-    return (
-      <div>
-        <h1>Getting Started</h1>
-        <p>We are gonna GET STARTED up in here (eventually!)</p>
-      </div>
-    );
-  }
-  
+  return (
+    <div className="getting-started-container">
+      <h1 className="getting-started-title">Getting Started</h1>
+      <p className="getting-started-text">
+        We’re going to GET STARTED up in here... eventually!
+      </p>
+    </div>
+  );
+};
