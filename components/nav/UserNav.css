@@ -40,4 +40,22 @@
   .navbar-logout {
     margin-left: auto;
   }
+  .logout-btn {
+    background: none;
+    border: none;
+    font: inherit;
+    color: var(--offWhite);
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 0.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .logout-btn:hover {
+    color: var(--primary);
+    transform: scale(1.1);
+  }
   

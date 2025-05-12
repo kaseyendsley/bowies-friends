@@ -44,7 +44,7 @@ export const CatList = () => {
       </h5>
         <input
           type="text"
-          placeholder="Search cat by any combination of color, ear tip, sex, markings, street or ZipCode"
+          placeholder="Search Cats by any combination of Color, Ear tip, Sex, Markings, Street or ZipCode"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           className="cat-search-bar"
