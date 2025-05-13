@@ -13,3 +13,10 @@ export const getAllCaretakers = () => {
     return fetch(`http://localhost:8088/caretakerCats?caretakerId=${caretakerId}&_expand=cat`)
       .then((res) => res.json());
   };
+
+  export const getCaretakerByEmail = async (email) => {
+    const res = await fetch(`http://localhost:8088/caretakers?email=${email}`);
+    const data = await res.json();
+    return data[0]; // assuming it returns an array??
+  };
+  

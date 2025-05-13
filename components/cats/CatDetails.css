@@ -73,4 +73,43 @@
   .back-to-cat-list-button:hover {
     background-color: #555;
   }
+  .cat-edit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
   
+  .cat-edit-button:hover {
+    background-color: #555;
+  }
+  
+  .cat-delete-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .cat-delete-button:hover {
+    background-color: #555;
+  }
+  .edit-delete-buttons {
+    text-align: center;
+  }
