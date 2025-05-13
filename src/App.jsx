@@ -5,6 +5,7 @@ import { GettingStarted } from '/components/welcome/GettingStarted.jsx';
 import { CatList } from '/components/Cats/CatList.jsx';
 import { CatDetails } from '/components/Cats/CatDetails.jsx';
 import { CatForm } from '/components/Cats/CatForm.jsx';
+import { CatEdit } from '../components/cats/CatEdit.jsx';
 import { CaretakerList } from '/components/Caretakers/CaretakerList.jsx'; 
 import { CaretakerDetails } from '/components/Caretakers/CaretakerDetails.jsx'; 
 import { Resources } from '/components/welcome/Resources.jsx';
@@ -22,6 +23,7 @@ export const App = () => {
         <Route path="/cat-list" element={<CatList />} />
         <Route path="/cat-details/:id" element={<CatDetails />} />
         <Route path="/cat-form" element={<CatForm />} />
+        <Route path="/cat-edit/:id" element={<CatEdit />} />
         <Route path="/caretaker-list" element={<CaretakerList />} />
         <Route path="/caretaker-details/:id" element={<CaretakerDetails />} /> 
         <Route path="/resources" element={<Resources />} />

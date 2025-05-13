@@ -8,6 +8,8 @@ export const CaretakerDetails = () => {
   const [caretaker, setCaretaker] = useState(null);
   const [cats, setCats] = useState([]);
 
+
+
   useEffect(() => {
     getCaretakerById(id).then((data) => {
       setCaretaker(data);

@@ -103,7 +103,8 @@
       "friendly": true,
       "knownStreets": "",
       "notes": "",
-      "url": "https://images.pexels.com/photos/1424687/pexels-photo-1424687.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "url": "https://images.pexels.com/photos/1424687/pexels-photo-1424687.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "createdByUserId": 3
     },
     {
       "id": 2,
@@ -116,7 +117,8 @@
       "friendly": false,
       "knownStreets": "",
       "notes": "",
-      "url": "https://images.pexels.com/photos/127028/pexels-photo-127028.jpeg?auto=compress&cs=tinysrgb&w=1200"
+      "url": "https://images.pexels.com/photos/127028/pexels-photo-127028.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "createdByUserId": 3
     },
     {
       "id": 3,
@@ -129,7 +131,8 @@
       "friendly": true,
       "knownStreets": "",
       "notes": "",
-      "url": "https://images.pexels.com/photos/208984/pexels-photo-208984.jpeg?auto=compress&cs=tinysrgb&w=1200"
+      "url": "https://images.pexels.com/photos/208984/pexels-photo-208984.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "createdByUserId": 2
     },
     {
       "id": 4,
@@ -142,12 +145,12 @@
       "friendly": false,
       "knownStreets": "Dickerson",
       "notes": "",
-      "url": "https://images.pexels.com/photos/982314/pexels-photo-982314.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      "url": "https://images.pexels.com/photos/982314/pexels-photo-982314.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "createdByUserId": 5
     },
     {
-      "id": 5,
       "name": "Felix",
-      "age": 4,
+      "age": 3,
       "colorId": 4,
       "sexId": 1,
       "specialMarkings": "",
@@ -155,7 +158,9 @@
       "friendly": true,
       "knownStreets": "",
       "notes": "",
-      "url": "https://images.pexels.com/photos/2539094/pexels-photo-2539094.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "url": "https://images.pexels.com/photos/2539094/pexels-photo-2539094.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "createdByUserId": 4,
+      "id": 5
     },
     {
       "id": 6,
@@ -168,7 +173,8 @@
       "friendly": true,
       "knownStreets": "",
       "notes": "",
-      "url": "https://images.pexels.com/photos/31985124/pexels-photo-31985124/free-photo-of-close-up-portrait-of-a-calico-cat-by-window.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "url": "https://images.pexels.com/photos/31985124/pexels-photo-31985124/free-photo-of-close-up-portrait-of-a-calico-cat-by-window.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "createdByUserId": 2
     },
     {
       "id": 7,
@@ -181,7 +187,8 @@
       "friendly": false,
       "knownStreets": "",
       "notes": "",
-      "url": "https://images.pexels.com/photos/31965431/pexels-photo-31965431/free-photo-of-ginger-cat-resting-on-pavement-in-athens.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "url": "https://images.pexels.com/photos/31965431/pexels-photo-31965431/free-photo-of-ginger-cat-resting-on-pavement-in-athens.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "createdByUserId": 5
     },
     {
       "id": 8,
@@ -194,7 +201,8 @@
       "friendly": true,
       "knownStreets": "",
       "notes": "",
-      "url": "https://images.pexels.com/photos/3777620/pexels-photo-3777620.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "url": "https://images.pexels.com/photos/3777620/pexels-photo-3777620.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "createdByUserId": 5
     },
     {
       "id": 9,
@@ -207,7 +215,8 @@
       "friendly": false,
       "knownStreets": "",
       "notes": "",
-      "url": "https://images.pexels.com/photos/18827666/pexels-photo-18827666/free-photo-of-photo-of-a-cat-on-the-grass.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "url": "https://images.pexels.com/photos/18827666/pexels-photo-18827666/free-photo-of-photo-of-a-cat-on-the-grass.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "createdByUserId": 2
     },
     {
       "id": 10,
@@ -220,7 +229,8 @@
       "friendly": true,
       "knownStreets": "",
       "notes": "",
-      "url": "https://images.pexels.com/photos/7335650/pexels-photo-7335650.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "url": "https://images.pexels.com/photos/7335650/pexels-photo-7335650.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "createdByUserId": 2
     },
     {
       "id": 11,
@@ -287,7 +297,6 @@
       "notes": "",
       "url": "https://images.pexels.com/photos/7229998/pexels-photo-7229998.jpeg?auto=compress&cs=tinysrgb&w=1600"
     }
-
   ],
   "caretakers": [
     {
@@ -300,6 +309,7 @@
       "active": true,
       "isLeadCaretaker": false,
       "isAdmin": false,
+      "email": "avagreen2001@hotmail.com",
       "url": "https://images.pexels.com/photos/1310522/pexels-photo-1310522.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
@@ -312,6 +322,7 @@
       "active": true,
       "isLeadCaretaker": true,
       "isAdmin": false,
+      "email": "benthomasiscool@gmail.com",
       "url": "https://images.pexels.com/photos/1334945/pexels-photo-1334945.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
@@ -324,6 +335,7 @@
       "active": true,
       "isLeadCaretaker": false,
       "isAdmin": false,
+      "email": "caramjames@yahoo.com",
       "url": "https://images.pexels.com/photos/1085517/pexels-photo-1085517.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
@@ -349,6 +361,7 @@
       "active": true,
       "isLeadCaretaker": true,
       "isAdmin": true,
+      "email": "bballchamps07@gmail.com",
       "url": "https://images.pexels.com/photos/674685/pexels-photo-674685.jpeg?auto=compress&cs=tinysrgb&w=1600"
     }
   ],
