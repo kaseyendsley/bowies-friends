@@ -19,10 +19,10 @@ export const UserNav = () => {
           <Link to="/getting-started" className="navbar-link">Getting Started</Link>
         </li>
         <li className="navbar-item">
-          <Link to="/cat-list" className="navbar-link">Cat List</Link>
+          <Link to="/cat-list" className="navbar-link">Community Cats</Link>
         </li>
         <li className="navbar-item">
-          <Link to="/caretaker-list" className="navbar-link">Caretaker List</Link> 
+          <Link to="/caretaker-list" className="navbar-link">Caretakers</Link> 
         </li>
         <li className="navbar-item">
           <Link to="/resources" className="navbar-link">Resources</Link> 

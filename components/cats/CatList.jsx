@@ -1,19 +1,24 @@
 import { useEffect, useState } from "react";
-import "./CatList.css";
 import { getAllCats } from "../services/CatService.jsx";
 import { Link } from "react-router-dom";
+import "./CatList.css"; 
 
 export const CatList = () => {
-    const [allCats, setAllCats] = useState([]);
-    const [searchTerm, setSearchTerm] = useState("");
+  const [allCats, setAllCats] = useState([]);
+  const [filteredCats, setFilteredCats] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const catsPerPage = 12;
 
-    useEffect(() => {
-      getAllCats().then((catsArray) => {
-        setAllCats(catsArray);
-      });
-    }, []);
+  useEffect(() => {
+    getAllCats().then((catsArray) => {
+      setAllCats(catsArray);
+      setFilteredCats(catsArray);
+    });
+  }, []);
 
-    const filteredCats = allCats.filter((cat) => {
+  useEffect(() => {
+    const filtered = allCats.filter((cat) => {
       const combinedInfo = `
         ${cat.name}
         ${cat.age}
@@ -27,34 +32,45 @@ export const CatList = () => {
 
       const searchWords = searchTerm.toLowerCase().split(/\s+/).filter(Boolean);
 
-      if (searchWords.length === 0) {
-        return true;
-      }
-    
+      if (searchWords.length === 0) return true;
       return searchWords.some((word) => combinedInfo.includes(word));
     });
 
-    return (
-      <div className="cats-container">
-        <h2>Community Cat List</h2>
-        <h5>PLEASE ensure to check our database thoroughly before adding a new cat to prevent duplicates!</h5>
+    setFilteredCats(filtered);
+    setCurrentPage(1);
+  }, [searchTerm, allCats]);
+
+  // Pagination logic
+  const indexOfLastCat = currentPage * catsPerPage;
+  const indexOfFirstCat = indexOfLastCat - catsPerPage;
+  const currentCats = filteredCats.slice(indexOfFirstCat, indexOfLastCat);
+  const totalPages = Math.ceil(filteredCats.length / catsPerPage);
+
+  return (
+    <div className="cats-container">
+      <h2>Community Cats</h2>
+      <h5>Make sure to check our database thoroughly before adding a new cat to prevent duplicates!</h5>
       <h5>
         Sure you've found a new cat?{" "}
         <Link to="/cat-form">Click HERE to add it to our database!</Link>
       </h5>
-        <input
-          type="text"
-          placeholder="Search Cats by any combination of Color, Ear tip, Sex, Markings, Street or ZipCode"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="cat-search-bar"
-        />
 
-        <article className="cats-list">
-          {filteredCats.map((cat) => {
+      <input
+        type="text"
+        placeholder="Search Cats by any combination of Color, Markings, Zip Code, Street, etc"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        className="cat-search-bar"
+      />
+
+      <article className="cats-list">
+        {filteredCats.length === 0 ? (
+          <p>No cats match your search.</p>
+        ) : (
+          currentCats.map((cat) => {
             const colorName = cat.color?.color || "unknown";
             const sexName = cat.sex?.sex || "unknown";
-            
+
             return (
               <Link to={`/cat-details/${cat.id}`} key={cat.id} className="cat-card">
                 <section>
@@ -73,9 +89,28 @@ export const CatList = () => {
                 </section>
               </Link>
             );
-          })}
-        </article>
-      </div>
-    );
-};
+          })
+        )}
+      </article>
 
+      <div className="pagination-controls">
+        {currentPage > 1 && (
+          <button
+            className="pagination-button"
+            onClick={() => setCurrentPage(currentPage - 1)}
+          >
+            Previous
+          </button>
+        )}
+        {currentPage < totalPages && (
+          <button
+            className="pagination-button"
+            onClick={() => setCurrentPage(currentPage + 1)}
+          >
+            Next
+          </button>
+        )}
+      </div>
+    </div>
+  );
+};
