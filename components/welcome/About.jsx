@@ -25,7 +25,7 @@ export const About = () => {
         I started calling on her every evening to eat dinner and stay the night inside, away from coyotes and other dangers.  She didn't love being confined, but she came
         back every single night.  I thought of it as a sweet little compromise - she could come and go as she pleased, and I respected her autonomy.
         I started talking to others in the neighborhood to find out more about her, but she was a recent addition to the area, it seemed.  No one knew who
-        trapped her and took her in to PCC (Pet Community Center) to get fixed.  Since I worked there at the time, I searched back through all the records - but it was hard to place her among the thousands of cats 
+        trapped her and took her in to PCC (Pet Community Center) to get "fixed".  Since I worked there at the time, I searched back through all the records - but it was hard to place her among the thousands of cats 
         that had come through, and record keeping on community cats isn't always the best.
       </p>
       <p>
@@ -39,8 +39,9 @@ export const About = () => {
       <h2>How It's Going</h2>
       <p>
        After months of acclimating to living with other cats (she never cuddled with my bonded pair, but they got close!) I managed to find her a home with a sweet older woman
-        whose cat had passed away.  I was so thankful to find her a home where she could be the only cat and continue her safe life inside.  Did you know that outdoor cats have an average lifespan of
-        2-5 years?  Indoor cats can live to be over 20 years old!  So many people don't understand the importance of TNR (trap/neuter/return) and how keeping pet populations
+        whose cat had passed away.  I was so thankful to find her a home where she could be the only cat and continue her safe life inside.  <br /> 
+        <a href="https://aercmn.com/indoor-cats-vs-outdoor-cats/" target="_blank">Did you know that outdoor cats have a lifespan of only 2-5 years?</a>  < br/>
+          Indoor cats have a much longer lifespan and can sometimes live to be over 20 years old!  So many people don't understand the importance of TNR (trap/neuter/return) and how keeping pet populations
         low ensures a better quality of life for all cats and the environments they share with other animals and humans.
         </p>
         <p>
@@ -50,7 +51,7 @@ export const About = () => {
         Like any good work, it is never truly over.
       </p>
       <h2>
-        From comfy couches to back alleys, every cat matters. Thanks for helping all of Bowie's Friends! 🐾
+        From comfy couches to back alleys, every cat matters. Thank you for helping all of Bowie's Friends! 🐾
       </h2>
     </div>
   );

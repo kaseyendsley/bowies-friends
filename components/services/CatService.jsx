@@ -20,15 +20,6 @@ export const createCat = (cat) => {
     }).then((res) => res.json())
   }
 
-
-// export const getCatByUserId = (userId) => {
-//     return fetch(`http://localhost:8088/cats?userId=${userId}`).then((res) =>
-//       res.json()
-//     )
-//   }
-
-
-
   export const getAllColors = async () => {
     const res = await fetch("http://localhost:8088/colors");
     return await res.json();

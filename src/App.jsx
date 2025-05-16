@@ -11,6 +11,7 @@ import { CaretakerDetails } from '/components/Caretakers/CaretakerDetails.jsx';
 import { Resources } from '/components/welcome/Resources.jsx';
 import { About } from '/components/welcome/About.jsx';
 import { Login } from '/components/auth/Login.jsx';
+import { Register } from '/components/auth/Register.jsx';
 
 export const App = () => {
   return (
@@ -18,6 +19,7 @@ export const App = () => {
       <UserNav />
       <Routes>
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/" element={<Home />} />
         <Route path="/getting-started" element={<GettingStarted />} />
         <Route path="/cat-list" element={<CatList />} />
