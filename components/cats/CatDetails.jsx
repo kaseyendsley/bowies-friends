@@ -47,34 +47,34 @@ export const CatDetails = () => {
       />
       <div className="cat-info">
         <p>
-          <strong>Cat ID:</strong> {cat.id}
+          <u>Cat ID:</u> {cat.id}
         </p>
         <p>
-          <strong>Name:</strong> {cat.name}
+          <u>Name:</u> {cat.name}
         </p>
         <p>
-          <strong>Color:</strong> {cat.color?.color || "Unknown"}
+          <u>Color:</u> {cat.color?.color || "Unknown"}
         </p>
         <p>
-          <strong>Sex:</strong> {cat.sex?.sex || "Unknown"}
+          <u>Sex:</u> {cat.sex?.sex || "Unknown"}
         </p>
         <p>
-          <strong>Age:</strong> {cat.age || "Unknown"} years
+          <u>Age:</u> {cat.age || "Unknown"} years
         </p>
         <p>
-          <strong>Special Markings:</strong> {cat.specialMarkings || "None"}
+          <u>Special Markings:</u> {cat.specialMarkings || "None"}
         </p>
         <p>
-          <strong>Zip Code:</strong> {cat.zipCode}
+          <u>Zip Code:</u> {cat.zipCode}
         </p>
         <p>
-          <strong>Friendly?:</strong> {friendlyMessage}
+          <u>Friendly?:</u> {friendlyMessage}
         </p>
         <p>
-          <strong>Known Streets:</strong> {cat.knownStreets || "None"}
+          <u>Known Streets:</u> {cat.knownStreets || "None"}
         </p>
         <p>
-          <strong>Notes:</strong> {cat.notes || "No additional notes"}
+          <u>Notes:</u> {cat.notes || "No additional notes"}
         </p>
 
         {currentUser?.id === cat.createdByUserId && (

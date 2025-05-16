@@ -82,3 +82,21 @@
     opacity: 1;              
   }
   
+
+  .pagination-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+   .pagination-button:hover {
+    background-color: #555;
+  }

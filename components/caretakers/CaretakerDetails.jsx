@@ -29,13 +29,13 @@ export const CaretakerDetails = () => {
 
       <img src={caretaker.url} alt={`A photo of ${caretaker.name}`} className="caretaker-image" />
       <div className="caretaker-info">
-        <p><strong>ID:</strong> {caretaker.id}</p>
-        <p><strong>Name:</strong> {caretaker.name}</p>
-        <p><strong>Zip Code:</strong> {caretaker.zipCode}</p>
-        <p><strong>Streets Served:</strong> {caretaker.streetsServed || "Not listed"}</p>
-        <p><strong>Phone Number:</strong> {caretaker.phoneNumber || "Not listed"}</p>
-        <p><strong>Special Skills:</strong> {caretaker.specialSkills || "None listed"}</p>
-        <p><strong>Lead Caretaker:</strong> {caretaker.isLeadCaretaker ? "Yes" : "No"}</p>
+        <p><u>ID:</u> {caretaker.id}</p>
+        <p><u>Name:</u> {caretaker.name}</p>
+        <p><u>Zip Code:</u> {caretaker.zipCode}</p>
+        <p><u>Streets Served:</u> {caretaker.streetsServed || "Not listed"}</p>
+        <p><u>Phone Number:</u> {caretaker.phoneNumber || "Not listed"}</p>
+        <p><u>Special Skills:</u> {caretaker.specialSkills || "None listed"}</p>
+        <p><u>Lead Caretaker:</u> {caretaker.isLeadCaretaker ? "Yes" : "No"}</p>
 
         {cats.length > 0 ? (
           <div className="caretaker-cats">
@@ -50,7 +50,9 @@ export const CaretakerDetails = () => {
             </p>
           </div>
         ) : (
+          <div className="caretaker-cats">
           <p>This caretaker is currently not caring for any cats.</p>
+          </div>
         )}
       </div>
 
