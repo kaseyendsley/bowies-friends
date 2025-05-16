@@ -45,7 +45,8 @@
   textarea {
     height: 100px;
   }
-  
+
+
   fieldset {
     border: none;
     margin: 0;
@@ -56,6 +57,7 @@
     font-size: 16px;
     color: #555;
     margin-bottom: 5px;
+    text-align: center;
   }
   
   .submit-button {
@@ -79,10 +81,6 @@
     align-items: center;
     border: none;
     padding: 0;
-  }
-  
-  .friendly-fieldset legend {
-    margin-right: 10px;
   }
   
   .radio-buttons {

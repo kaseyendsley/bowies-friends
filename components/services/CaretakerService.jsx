@@ -20,3 +20,14 @@ export const getAllCaretakers = () => {
     return data[0]; // assuming it returns an array??
   };
   
+
+  export const createCaretaker = (newCaretaker) => {
+  return fetch("http://localhost:8088/caretakers", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(newCaretaker)
+  }).then(res => res.json())
+}
+

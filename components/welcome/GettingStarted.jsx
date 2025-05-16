@@ -5,10 +5,13 @@ export const GettingStarted = () => {
   return (
     <div className="getting-started-container">
       <h1 className="getting-started-title">So... first time?</h1>
-      <p className="getting-started-text">
-       Welcome to Bowie's Friends!  Whether you're curious and 
+      <p>
+       Welcome to Bowie's Friends!  This application is dedicated to helping caretakers care for community cats by providing a comprehensive database
+       of community cats and the caretakers they share their neighborhood with.  Whether you're curious and 
        want to learn more about your feline neighbors, have a single cat you feed on occasion, or want to take a 
        bigger role in your community, we're glad you're here!  
+       <br />
+       <br/>
       </p>
       <p>
       Our <Link to="/cat-list" className="cats-link">List of Community Cats </Link> and <Link to="/caretaker-list">List of Caretakers</Link> are simple to navigate via the search bar

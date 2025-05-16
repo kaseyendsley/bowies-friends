@@ -238,7 +238,7 @@
       "age": 3,
       "colorId": 11,
       "sexId": 2,
-      "specialMarkings": "",
+      "specialMarkings": "Missing half of tail",
       "zipCode": 37211,
       "friendly": true,
       "knownStreets": "Ashley Dr",
@@ -255,7 +255,7 @@
       "zipCode": 37211,
       "friendly": false,
       "knownStreets": "Kinross Ave",
-      "notes": "",
+      "notes": "Bella is very afraid of dogs",
       "url": "https://images.pexels.com/photos/12456798/pexels-photo-12456798.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
@@ -268,7 +268,7 @@
       "zipCode": 37211,
       "friendly": true,
       "knownStreets": "Brewer Drive",
-      "notes": "",
+      "notes": "Jack likes children",
       "url": "https://images.pexels.com/photos/31950001/pexels-photo-31950001/free-photo-of-cute-british-shorthair-cat-indoors-with-plants.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
@@ -296,6 +296,20 @@
       "knownStreets": "Durrett Drive",
       "notes": "",
       "url": "https://images.pexels.com/photos/7229998/pexels-photo-7229998.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+      "name": "Edmond Junior",
+      "age": 2,
+      "colorId": 14,
+      "sexId": 1,
+      "specialMarkings": "",
+      "zipCode": 37205,
+      "friendly": true,
+      "knownStreets": "Ransom Ave",
+      "notes": "This cat likes buff men",
+      "url": "https://images.pexels.com/photos/30799837/pexels-photo-30799837/free-photo-of-serene-red-cat-relaxing-on-snowy-beach.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "createdByUserId": 9,
+      "id": 16
     }
   ],
   "caretakers": [
@@ -364,47 +378,58 @@
       "email": "bballchamps07@gmail.com",
       "url": "https://images.pexels.com/photos/674685/pexels-photo-674685.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
-  {
-    "id": 6,
-    "name": "Marcus Henderson",
-    "zipCode": 10009,
-    "streetsServed": "Avenue B",
-    "phoneNumber": "555-555-1234",
-    "specialSkills": "Feral cat trapping",
-    "active": true,
-    "isLeadCaretaker": false,
-    "isAdmin": false,
-    "email": "marcus.h@example.com",
-    "url": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1600"
-  },
-  {
-    "id": 7,
-    "name": "Lara Chen",
-    "zipCode": 10011,
-    "streetsServed": "14th Street",
-    "phoneNumber": "555-123-9876",
-    "specialSkills": "Medical foster experience",
-    "active": true,
-    "isLeadCaretaker": true,
-    "isAdmin": false,
-    "email": "lara.chen@example.com",
-    "url": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1600"
-  },
-  {
-    "id": 8,
-    "name": "Devon Parker",
-    "zipCode": 10003,
-    "streetsServed": "St. Marks Place",
-    "phoneNumber": "555-789-2222",
-    "specialSkills": "",
-    "active": true,
-    "isLeadCaretaker": false,
-    "isAdmin": false,
-    "email": "devonp@example.com",
-    "url": "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1600"
-  }
-
-
+    {
+      "id": 6,
+      "name": "Marcus Henderson",
+      "zipCode": 37205,
+      "streetsServed": "",
+      "phoneNumber": "555-555-1234",
+      "specialSkills": "Feral cat trapping",
+      "active": true,
+      "isLeadCaretaker": false,
+      "isAdmin": false,
+      "email": "marcus.h@example.com",
+      "url": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+      "id": 7,
+      "name": "Lara Chen",
+      "zipCode": 37215,
+      "streetsServed": "",
+      "phoneNumber": "555-123-9876",
+      "specialSkills": "Medical and foster experience",
+      "active": false,
+      "isLeadCaretaker": false,
+      "isAdmin": false,
+      "email": "lara.chen@example.com",
+      "url": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+      "id": 8,
+      "name": "Devon Parker",
+      "zipCode": 37215,
+      "streetsServed": "",
+      "phoneNumber": "555-789-2222",
+      "specialSkills": "",
+      "active": false,
+      "isLeadCaretaker": false,
+      "isAdmin": false,
+      "email": "devonp@example.com",
+      "url": "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+      "name": "Edmond Wells",
+      "zipCode": 37205,
+      "streetsServed": "Vine Ridge Drive, Ransom Ave",
+      "phoneNumber": "615-123-4567",
+      "specialSkills": "Good with ferals, likes to foster",
+      "email": "Edmondw@gmail.com",
+      "url": "https://images.pexels.com/photos/3616501/pexels-photo-3616501.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "active": true,
+      "isLeadCaretaker": false,
+      "isAdmin": false,
+      "id": 9
+    }
   ],
   "caretakerCats": [
     {
