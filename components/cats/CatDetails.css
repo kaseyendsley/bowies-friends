@@ -113,3 +113,40 @@
   .edit-delete-buttons {
     text-align: center;
   }
+
+  .caretaker-toggle {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* space between options */
+  margin-top: 0.5em;
+}
+
+.caretaker-toggle label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.3rem; /* small gap between radio button and text */
+  font-weight: 500;
+}
+
+  .caretaker-submit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .caretaker-submit-button:hover {
+    background-color: #555;
+  }
+  .cat-caretakers {
+    text-align: center;
+  }
