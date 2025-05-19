@@ -6,6 +6,7 @@ import {
   getCaretakerCats,
   addCaretakerCat,
   removeCaretakerCat,
+  deleteCaretakerCatByCatId
 } from "../services/CatService";
 
 import "./CatDetails.css";
@@ -54,6 +55,7 @@ export const CatDetails = () => {
     if (!confirmDelete) return;
 
     try {
+      await deleteCaretakerCatByCatId(catId); // delete any relationships before/while deleting cat
       await deleteCat(catId);
       navigate("/cat-list");
     } catch (error) {
@@ -135,27 +137,27 @@ export const CatDetails = () => {
           <u>Notes:</u> {cat.notes || "No additional notes"}
         </p>
  < br />
-        {caretakerCats.length > 0 ? (
-          <div className="cat-caretakers">
-            <h3>Current Caretakers:</h3>
-            <p>
-              {caretakerCats
-                .filter((entry) => entry.catId === cat.id)
-                .map((entry, index, filtered) => (
-                  <span key={entry.id}>
-                    <Link to={`/caretaker-details/${entry.caretakerId}`}>
-                      <strong>{entry.caretaker.name}</strong>
-                    </Link>
-                    {index < filtered.length - 1 && ", "}
-                  </span>
-                ))}
-            </p>
-          </div>
-        ) : (
-          <div className="cat-caretakers">
+         <div className="cat-caretakers">
+          {caretakerCats.filter((entry) => entry.catId === cat.id).length > 0 ? (
+            <>
+              <h3>Current Caretakers:</h3>
+              <p>
+                {caretakerCats
+                  .filter((entry) => entry.catId === cat.id)
+                  .map((entry, index, filtered) => (
+                    <span key={entry.id}>
+                      <Link to={`/caretaker-details/${entry.caretakerId}`}>
+                        <strong>{entry.caretaker.name}</strong>
+                      </Link>
+                      {index < filtered.length - 1 && ", "}
+                    </span>
+                  ))}
+              </p>
+            </>
+          ) : (
             <p>This cat currently has no active caretakers.</p>
-          </div>
-        )}
+          )}
+        </div>
 < br />
         {bowieUserObject && (
           <div className="caretaker-toggle">
