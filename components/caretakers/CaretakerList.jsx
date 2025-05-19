@@ -30,7 +30,7 @@ export const CaretakerList = () => {
     return searchWords.some((word) => combinedInfo.includes(word));
   });
 
-  // Pagination logic
+  // pagination
   const indexOfLastCaretaker = currentPage * caretakersPerPage;
   const indexOfFirstCaretaker = indexOfLastCaretaker - caretakersPerPage;
   const currentCaretakers = filteredCaretakers.slice(indexOfFirstCaretaker, indexOfLastCaretaker);

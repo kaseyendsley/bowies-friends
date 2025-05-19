@@ -36,7 +36,7 @@ export const CaretakerDetails = () => {
         <p><u>Phone Number:</u> {caretaker.phoneNumber || "Not listed"}</p>
         <p><u>Special Skills:</u> {caretaker.specialSkills || "None listed"}</p>
         <p><u>Lead Caretaker:</u> {caretaker.isLeadCaretaker ? "Yes" : "No"}</p>
-
+< br />
         {cats.length > 0 ? (
           <div className="caretaker-cats">
             <h3>Currently caring for:</h3>
