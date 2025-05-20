@@ -25,7 +25,7 @@ export const CaretakerDetails = () => {
 
   return (
     <div className="caretaker-details-container">
-      <h2>Caretaker Details</h2>
+      <h2>{caretaker.name}'s Profile</h2>
 
       <img src={caretaker.url} alt={`A photo of ${caretaker.name}`} className="caretaker-image" />
       <div className="caretaker-info">

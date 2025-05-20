@@ -11,10 +11,18 @@ export const UserNav = () => {
 
   return (
     <nav className="navbar">
+
+  <div className="navbar-logo">
+    <Link to="/">
+      <img src="/assets/bowielogo.png" alt="Bowie's Friends Logo" />
+    </Link>
+  </div>
+
+
       <ul className="navbar-list">
-        <li className="navbar-item">
+        {/* <li className="navbar-item">
           <Link to="/" className="navbar-link">Home</Link>
-        </li>
+        </li> */}
         <li className="navbar-item">
           <Link to="/getting-started" className="navbar-link">Getting Started</Link>
         </li>

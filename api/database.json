@@ -243,7 +243,8 @@
       "friendly": true,
       "knownStreets": "Ashley Dr",
       "notes": "",
-      "url": "https://images.pexels.com/photos/8230644/pexels-photo-8230644.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "url": "https://images.pexels.com/photos/8230644/pexels-photo-8230644.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "createdByUserId": 5
     },
     {
       "id": 12,
@@ -256,7 +257,8 @@
       "friendly": false,
       "knownStreets": "Kinross Ave",
       "notes": "Bella is very afraid of dogs",
-      "url": "https://images.pexels.com/photos/12456798/pexels-photo-12456798.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "url": "https://images.pexels.com/photos/12456798/pexels-photo-12456798.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "createdByUserId": 5
     },
     {
       "id": 13,
@@ -269,7 +271,8 @@
       "friendly": true,
       "knownStreets": "Brewer Drive",
       "notes": "Jack likes children",
-      "url": "https://images.pexels.com/photos/31950001/pexels-photo-31950001/free-photo-of-cute-british-shorthair-cat-indoors-with-plants.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "url": "https://images.pexels.com/photos/31950001/pexels-photo-31950001/free-photo-of-cute-british-shorthair-cat-indoors-with-plants.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "createdByUserId": 5
     },
     {
       "id": 14,
@@ -282,7 +285,8 @@
       "friendly": true,
       "knownStreets": "Briarwood Drive",
       "notes": "",
-      "url": "https://images.pexels.com/photos/357141/pexels-photo-357141.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "url": "https://images.pexels.com/photos/357141/pexels-photo-357141.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "createdByUserId": 4
     },
     {
       "id": 15,
@@ -295,7 +299,8 @@
       "friendly": false,
       "knownStreets": "Durrett Drive",
       "notes": "",
-      "url": "https://images.pexels.com/photos/7229998/pexels-photo-7229998.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "url": "https://images.pexels.com/photos/7229998/pexels-photo-7229998.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "createdByUserId": 4
     }
   ],
   "caretakers": [
@@ -467,11 +472,6 @@
       "catId": 7
     },
     {
-      "id": 9,
-      "caretakerId": 4,
-      "catId": 9
-    },
-    {
       "id": 11,
       "caretakerId": 5,
       "catId": 11
@@ -503,11 +503,6 @@
     },
     {
       "caretakerId": 4,
-      "catId": 1,
-      "id": 17
-    },
-    {
-      "caretakerId": 4,
       "catId": 5,
       "id": 18
     },
@@ -525,6 +520,16 @@
       "caretakerId": 9,
       "catId": 12,
       "id": 22
+    },
+    {
+      "caretakerId": 4,
+      "catId": 9,
+      "id": 23
+    },
+    {
+      "caretakerId": 4,
+      "catId": 1,
+      "id": 24
     }
   ]
 }

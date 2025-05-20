@@ -82,9 +82,9 @@ export const CatForm = () => {
       sexId: parseInt(formData.sexId),
     };
 
-    createCat(payload).then(() => {
+    createCat(payload).then((createdCat) => {
       play()
-      navigate("/cat-list");
+      navigate(`/cat-details/${createdCat.id}`);
     });
   };
 

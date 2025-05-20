@@ -1,25 +1,49 @@
-.navbar {
+ .navbar,
+.navbar * {
+  cursor: url('/assets/pawicon.png'), auto !important;
+}
+ 
+ .navbar {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    background-color: var(--dark);
+    background-color: white;
     margin: 0;
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.0rem 2rem;
     border-bottom: 3px solid var(--primary); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  }
-  
-  .navbar-list {
+  } 
+
+     .navbar-list {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
     width: 100%;
     margin: 0;
-  }
+   
+     }
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary);
+  text-decoration: none;
+  gap: 0.5rem;
+}
+
+.navbar-logo img {
+  height: 60px;
+  width: auto;
+}
   
   .navbar-item {
     flex-basis: 20%;
     text-align: center;
+   
   }
   
   .navbar-link {
@@ -59,3 +83,8 @@
     transform: scale(1.1);
   }
   
+
+
+
+
+

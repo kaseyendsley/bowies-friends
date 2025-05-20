@@ -48,6 +48,7 @@ export const CatList = () => {
 
   return (
     <div className="cats-container">
+      <div className="cats-intro">
       <h2>Community Cats</h2>
       <h5>Make sure to check our database thoroughly before adding a new cat to prevent duplicates!</h5>
       <h5>
@@ -62,6 +63,7 @@ export const CatList = () => {
         onChange={(e) => setSearchTerm(e.target.value)}
         className="cat-search-bar"
       />
+      </div>
 
       <article className="cats-list">
         {filteredCats.length === 0 ? (
@@ -70,6 +72,8 @@ export const CatList = () => {
           currentCats.map((cat) => {
             const colorName = cat.color?.color || "unknown";
             const sexName = cat.sex?.sex || "unknown";
+
+            
 
             return (
               <Link to={`/cat-details/${cat.id}`} key={cat.id} className="cat-card">

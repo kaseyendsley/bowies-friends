@@ -1,3 +1,8 @@
+.caretaker-card,
+.caretaker-card * {
+  cursor: url('/assets/pawicon.png'), auto !important;
+}
+
 .caretakers-container {
     padding: 20px;
     max-width: 900px;
@@ -104,4 +109,12 @@
 
    .pagination-button:hover {
     background-color: #555;
+  }
+
+  h2 {
+    background-color: white;  
+     display: inline-block;    /* solid white background */
+  padding: 0.5em 0.5em;         
+  display: inline-block;        /* shrink‑wraps to content width */
+  border-radius: 5em; 
   }

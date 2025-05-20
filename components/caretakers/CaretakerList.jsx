@@ -39,6 +39,7 @@ export const CaretakerList = () => {
   return (
     <div className="caretakers-container">
       <h2>Community Caretakers</h2>
+      < br />
       <input
         type="text"
         placeholder="Search Caretakers by any combination of Name, Zip Code, Served Streets, Special Skills, etc"

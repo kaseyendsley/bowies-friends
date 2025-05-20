@@ -35,7 +35,7 @@ export const Login = () => {
         <section>
           <form className="form-login" onSubmit={handleLogin}>
             <h1>Bowie's Friends</h1>
-            <h2>Please sign in</h2>
+            <h3>Please sign in</h3>
             <fieldset>
               <div className="form-group">
                 <input
