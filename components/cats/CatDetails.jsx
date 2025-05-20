@@ -6,14 +6,17 @@ import {
   getCaretakerCats,
   addCaretakerCat,
   removeCaretakerCat,
-  deleteCaretakerCatByCatId
+  deleteCaretakerCatByCatId,
 } from "../services/CatService";
+
+import { getCaretakerById } from "../services/CaretakerService";
 
 import "./CatDetails.css";
 
 export const CatDetails = () => {
   const { id } = useParams();
   const [cat, setCat] = useState(null);
+  const [creator, setCreator] = useState(null);
   const [caretakerCats, setCaretakerCats] = useState([]);
   const [isCaringForCat, setIsCaringForCat] = useState(false);
   const [selectedCareStatus, setSelectedCareStatus] = useState(null);
@@ -23,26 +26,38 @@ export const CatDetails = () => {
   const bowieUserObject = localBowieUser ? JSON.parse(localBowieUser) : null;
   const currentCaretakerId = bowieUserObject?.id;
 
+  // fetch cat data
   useEffect(() => {
     getCatById(id).then((catData) => {
       setCat(catData);
     });
   }, [id]);
 
+  // once cat is loaded, fetch its creator
+  useEffect(() => {
+    if (cat?.createdByUserId) {
+      getCaretakerById(cat.createdByUserId).then((data) => {
+        setCreator(data);
+      });
+    }
+  }, [cat]);
+
+  // fetch join data
   useEffect(() => {
     getCaretakerCats().then((data) => {
       setCaretakerCats(data);
     });
   }, []);
 
+  // sync care status
   useEffect(() => {
     if (cat && caretakerCats.length > 0 && currentCaretakerId) {
-      const relationshipExists = caretakerCats.some(
+      const rel = caretakerCats.some(
         (entry) =>
           entry.catId === cat.id && entry.caretakerId === currentCaretakerId
       );
-      setIsCaringForCat(relationshipExists);
-      setSelectedCareStatus(relationshipExists ? "yes" : "no");
+      setIsCaringForCat(rel);
+      setSelectedCareStatus(rel ? "yes" : "no");
     }
   }, [cat, caretakerCats, currentCaretakerId]);
 
@@ -55,7 +70,7 @@ export const CatDetails = () => {
     if (!confirmDelete) return;
 
     try {
-      await deleteCaretakerCatByCatId(catId); // delete any relationships before/while deleting cat
+      await deleteCaretakerCatByCatId(catId);
       await deleteCat(catId);
       navigate("/cat-list");
     } catch (error) {
@@ -68,8 +83,8 @@ export const CatDetails = () => {
     ? "This cat is known to be friendly!"
     : "Not friendly - use caution! Experienced caretakers recommended.";
 
-  const handleCareStatusChange = (event) => {
-    setSelectedCareStatus(event.target.value);
+  const handleCareStatusChange = (e) => {
+    setSelectedCareStatus(e.target.value);
   };
 
   const handleSubmitCareStatus = async () => {
@@ -84,13 +99,17 @@ export const CatDetails = () => {
         await removeCaretakerCat(currentCaretakerId, cat.id);
         setIsCaringForCat(false);
         alert("Cat removed from your Care List.");
+      } else if (selectedCareStatus === "no" && !isCaringForCat) {
+        alert(
+          "This cat is not currently in your Care List and therefore cannot be removed."
+        );
       } else {
         alert("This cat is already in your Care List.");
       }
 
-      // refresh caretakerCats
-      const updatedCaretakerCats = await getCaretakerCats();
-      setCaretakerCats(updatedCaretakerCats);
+      // refresh join table data
+      const updated = await getCaretakerCats();
+      setCaretakerCats(updated);
     } catch (error) {
       console.error("Care status update failed:", error);
       alert("Something went wrong. Please try again.");
@@ -99,7 +118,7 @@ export const CatDetails = () => {
 
   return (
     <div className="cat-details-container">
-      <h2>Cat Details</h2>
+      <h2>{cat.name}'s Profile</h2>
       <img
         src={cat.url || null}
         alt={`A photo of ${cat.name}`}
@@ -134,22 +153,32 @@ export const CatDetails = () => {
           <u>Known Streets:</u> {cat.knownStreets || "None"}
         </p>
         <p>
+          <u>Added By:</u>{" "}
+          {creator && (
+            <Link to={`/caretaker-details/${creator.id}`}>
+              <strong>{creator.name}</strong>
+            </Link>
+          )}
+        </p>
+        <p>
           <u>Notes:</u> {cat.notes || "No additional notes"}
         </p>
- < br />
-         <div className="cat-caretakers">
-          {caretakerCats.filter((entry) => entry.catId === cat.id).length > 0 ? (
+
+        <br />
+
+        <div className="cat-caretakers">
+          {caretakerCats.filter((e) => e.catId === cat.id).length > 0 ? (
             <>
               <h3>Current Caretakers:</h3>
               <p>
                 {caretakerCats
-                  .filter((entry) => entry.catId === cat.id)
-                  .map((entry, index, filtered) => (
+                  .filter((e) => e.catId === cat.id)
+                  .map((entry, idx, arr) => (
                     <span key={entry.id}>
                       <Link to={`/caretaker-details/${entry.caretakerId}`}>
                         <strong>{entry.caretaker.name}</strong>
                       </Link>
-                      {index < filtered.length - 1 && ", "}
+                      {idx < arr.length - 1 && ", "}
                     </span>
                   ))}
               </p>
@@ -158,7 +187,7 @@ export const CatDetails = () => {
             <p>This cat currently has no active caretakers.</p>
           )}
         </div>
-< br />
+        <br />
         {bowieUserObject && (
           <div className="caretaker-toggle">
             <p>Are you currently taking care of this cat?</p>

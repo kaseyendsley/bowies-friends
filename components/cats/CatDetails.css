@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     padding: 40px 20px;
-    background-color: #f0f0f0; 
+    /* background-color: #f0f0f0;  */
     min-height: 100vh; 
 }
 
@@ -131,14 +131,13 @@
 
   .caretaker-submit-button {
     display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
+    padding: 6px 12px;
     margin-right: 10px;
     background-color: #333;
     color: #fff;
     text-decoration: none;
     border: none;
-    border-radius: 6px;
+    border-radius: 13px;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.2s ease;
