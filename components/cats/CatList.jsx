@@ -49,7 +49,7 @@ export const CatList = () => {
   return (
     <div className="cats-container">
       <div className="cats-intro">
-      <h2>Community Cats</h2>
+      <h1>Community Cats</h1>
       <h5>Make sure to check our database thoroughly before adding a new cat to prevent duplicates!</h5>
       <h5>
         Sure you've found a new cat?{" "}

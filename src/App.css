@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
 body,
 a,
 button,
@@ -22,4 +24,22 @@ body {
   cursor: url('/assets/pawicon.png'), auto;
 }
 
+a {
+  color: #62788c; /* slightly darker than #6c8296 */
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  box-shadow: inset 0 -2px 0 0 rgba(98, 120, 140, 0.45); /* darker and slightly more visible */
+  transition: box-shadow 0.2s ease, color 0.2s ease;
+}
 
+a:hover { 
+  box-shadow: inset 0 -2px 0 0 rgba(90, 113, 132, 0.6); /* slightly deeper but still light */
+  color: #7f95a8; /* lighter hover color */
+}
+
+h1 {
+font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+}

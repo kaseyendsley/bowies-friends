@@ -38,7 +38,7 @@ export const CaretakerList = () => {
 
   return (
     <div className="caretakers-container">
-      <h2>Community Caretakers</h2>
+      <h1>Community Caretakers</h1>
       < br />
       <input
         type="text"

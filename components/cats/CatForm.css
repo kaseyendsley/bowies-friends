@@ -70,6 +70,7 @@
     cursor: pointer;
     align-self: center;
     margin-top: 20px;
+    font-family: Georgia, serif;
   }
   
   .submit-button:hover {
