@@ -105,13 +105,16 @@
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.2s ease;
+    font-family: Georgia, serif;
   }
   
   .cat-delete-button:hover {
     background-color: #555;
+    font-family: Georgia, serif;
   }
   .edit-delete-buttons {
     text-align: center;
+    
   }
 
   .caretaker-toggle {
@@ -141,6 +144,7 @@
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.2s ease;
+    font-family: Georgia, serif;
   }
   
   .caretaker-submit-button:hover {

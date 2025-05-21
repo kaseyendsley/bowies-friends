@@ -12,6 +12,7 @@ import { Resources } from '/components/welcome/Resources.jsx';
 import { About } from '/components/welcome/About.jsx';
 import { Login } from '/components/auth/Login.jsx';
 import { Register } from '/components/auth/Register.jsx';
+import './App.css';
 
 export const App = () => {
   return (

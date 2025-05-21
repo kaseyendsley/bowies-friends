@@ -22,29 +22,10 @@
   font-size: 1.2rem;
 }
 
-.home-link {
-  color: #3366cc;
-  text-decoration: underline;
-}
-
-.home-link:hover {
-  color: #003399;
-}
-
-body {
-   background-image:
-    linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
-    url("/assets/bowiebackground.jpg");
-  background-size: cover;        /* cover the viewport */
-  background-position: center;   /* center the image */
-  background-repeat: no-repeat;  /* don’t tile */
-  /* optional: ensure content doesn’t have its own background */
-  background-attachment: fixed;  /* keeps it fixed as you scroll */
-  cursor: url('/assets/pawicon.png'), auto; 
-}
 
 .home-logo img {
   height: 200px;
   width: auto;
 }
+
 

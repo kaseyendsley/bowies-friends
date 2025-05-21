@@ -118,7 +118,7 @@ export const CatDetails = () => {
 
   return (
     <div className="cat-details-container">
-      <h2>{cat.name}'s Profile</h2>
+      <h1>{cat.name}'s Profile</h1>
       <img
         src={cat.url || null}
         alt={`A photo of ${cat.name}`}
