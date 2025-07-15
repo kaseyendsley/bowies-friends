@@ -26,13 +26,14 @@
 
 .cat-image {
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     height: auto;
     border-radius: 16px; 
     margin-bottom: 20px;
     object-fit: cover;
     transform: scale(0.8); 
     margin-bottom: -20px;
+    margin-top: -15px;
 }
 
 .cat-info {
@@ -114,7 +115,7 @@
   }
   .edit-delete-buttons {
     text-align: center;
-    
+
   }
 
   .caretaker-toggle {
@@ -153,3 +154,7 @@
   .cat-caretakers {
     text-align: center;
   }
+
+h1 {
+  margin-top: -15px;
+}

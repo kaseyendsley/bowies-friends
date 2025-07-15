@@ -12,6 +12,7 @@ import { Resources } from '/components/welcome/Resources.jsx';
 import { About } from '/components/welcome/About.jsx';
 import { Login } from '/components/auth/Login.jsx';
 import { Register } from '/components/auth/Register.jsx';
+import { CaretakerEdit } from '../components/caretakers/CaretakerEdit.jsx';
 import './App.css';
 
 export const App = () => {
@@ -29,6 +30,8 @@ export const App = () => {
         <Route path="/cat-edit/:id" element={<CatEdit />} />
         <Route path="/caretaker-list" element={<CaretakerList />} />
         <Route path="/caretaker-details/:id" element={<CaretakerDetails />} /> 
+        <Route path="/caretaker-edit/:id" element={<CaretakerEdit />} />
+
         <Route path="/resources" element={<Resources />} />
         <Route path="/about" element={<About />} />
       </Routes>

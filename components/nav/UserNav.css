@@ -65,7 +65,7 @@
    font-family: "Amatic SC", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 18px;
+  font-size: 20px;
     letter-spacing: 1px;
     color: var(--offWhite);
     display: inline-block;
@@ -106,4 +106,68 @@
 
 
 
+/* ...existing styles... */
 
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--offWhite);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-logo {
+    display: block;
+  }
+
+  .navbar-logo img {
+    height: 50px; /* slightly smaller on mobile */
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--offWhite);
+    cursor: pointer;
+  }
+
+  .navbar-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  .navbar-list.mobile.open {
+    display: flex;
+  }
+
+  .navbar-item {
+    text-align: left;
+    padding: 0.5rem 0;
+  }
+
+  .navbar-link, .logout-btn {
+    font-size: 24px;
+  }
+
+
+
+  .navbar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  /* spreads logo and hamburger */
+  width: 100%;
+}
+
+}

@@ -76,7 +76,7 @@ export const Register = () => {
     <main style={{ textAlign: "center" }}>
       
         <div className="register-intro">
-        <h2>Bowie's Friends</h2>
+        <h1>Yay, New Friends!</h1>
         <h4>Please register to become a caretaker & gain access to Bowie's Friends!</h4>
         </div>
         <form className="form-login" onSubmit={handleRegister}>
@@ -178,7 +178,7 @@ export const Register = () => {
 
         <fieldset>
           <div className="form-group">
-            <button className="login-btn btn-info" type="submit">
+            <button className="register-btn" type="submit">
               Register as Caretaker
             </button>
           </div>

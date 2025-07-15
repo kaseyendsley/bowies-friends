@@ -6,7 +6,7 @@ import "./Login.css"
 
 
 export const Login = () => {
-    const [email, set] = useState("daniellee3@gmail.com")
+    const [email, set] = useState("")
     const navigate = useNavigate()
   
     const handleLogin = (e) => {
@@ -35,7 +35,7 @@ export const Login = () => {
         <section>
           <form className="form-login" onSubmit={handleLogin}>
             <h1>Bowie's Friends</h1>
-            <h3>Please sign in</h3>
+            <h3>Please sign in:</h3>
             <fieldset>
               <div className="form-group">
                 <input

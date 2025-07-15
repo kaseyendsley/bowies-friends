@@ -48,12 +48,13 @@ export const CatList = () => {
 
   return (
     <div className="cats-container">
-      <div className="cats-intro">
+      < div className="cats-intro">
       <h1>Community Cats</h1>
-      <h5>Make sure to check our database thoroughly before adding a new cat to prevent duplicates!</h5>
-      <h5>
+      <h5>Make sure to check our database thoroughly before adding a new cat to prevent duplicates!
+        < br />
+        < br />
         Sure you've found a new cat?{" "}
-        <Link to="/cat-form">Click HERE to add it to our database!</Link>
+        <Link to="/cat-form">Add them to the database!</Link>
       </h5>
 
       <input
@@ -63,7 +64,7 @@ export const CatList = () => {
         onChange={(e) => setSearchTerm(e.target.value)}
         className="cat-search-bar"
       />
-      </div>
+     </div>
 
       <article className="cats-list">
         {filteredCats.length === 0 ? (
