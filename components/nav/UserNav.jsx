@@ -30,7 +30,8 @@ export const UserNav = () => {
       <div className="navbar-header">
   <div className="navbar-logo">
     <Link to="/">
-      <img src="/assets/bowielogo.png" alt="Bowie's Friends Logo" />
+      <img src={`${import.meta.env.BASE_URL}assets/bowielogo.png`} alt="Bowie's Friends Logo" />
+
     </Link>
   </div>
   {isMobile && (
