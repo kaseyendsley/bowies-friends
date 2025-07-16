@@ -2,7 +2,7 @@
 
 # Bowie's Friends 🐾
 
-Bowie's Friends is a CRUD application built for community cat caretakers to streamline care for community cats in their neighborhoods.  Built as my front end capstone project for Nashville Software School and inspired by my time working with animal control and our local TNR nonprofit, Pet Community Center, I hope to grow this project in time.  New to community cats and TNR (trap/neuter/return)?  [Find out more here!](hhttps://www.neighborhoodcats.org/how-to-tnr/getting-started/what-is-tnr)
+Bowie's Friends is a CRUD application built for community cat caretakers to streamline care for community cats in their neighborhoods.  Built as my front end capstone project for Nashville Software School and inspired by my time working with animal control and our local TNR nonprofit, Pet Community Center, I hope to grow this project in time.  New to community cats and TNR (trap/neuter/return)?  [Find out more here!](https://www.neighborhoodcats.org/how-to-tnr/getting-started/what-is-tnr)
 
 # This application is deployed to GitHub Pages! 
 
@@ -13,6 +13,7 @@ https://kaseyendsley.github.io/bowies-friends/
 ```
 
 Once you load the page, please allow roughly one minute for the server to spin up.  Sometimes, it may take just a little bit longer (a page refresh or two may be necessary).  Using the set example email provided, please feel free to explore, add/remove cats to/from your care list, and upload new cats of your own!  
+
 (DISCLAIMER: All cats and caretakers present are represented by mock data!)
 
 ---
