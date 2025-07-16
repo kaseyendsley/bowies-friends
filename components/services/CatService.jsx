@@ -1,17 +1,19 @@
+const API = "https://bowies-friends-api.onrender.com";
+
 export const getAllCats = () => {
-  return fetch("http://localhost:8088/cats?_expand=color&_expand=sex").then(
+  return fetch(`${API}/cats?_expand=color&_expand=sex`).then(
     (res) => res.json()
   );
 };
 
 export const getCatById = (catId) => {
-  return fetch(
-    `http://localhost:8088/cats/${catId}?_expand=color&_expand=sex`
-  ).then((res) => res.json());
+  return fetch(`${API}/cats/${catId}?_expand=color&_expand=sex`).then((res) =>
+    res.json()
+  );
 };
 
 export const createCat = (cat) => {
-  return fetch("http://localhost:8088/cats", {
+  return fetch(`${API}/cats`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -21,17 +23,17 @@ export const createCat = (cat) => {
 };
 
 export const getAllColors = async () => {
-  const res = await fetch("http://localhost:8088/colors");
+  const res = await fetch(`${API}/colors`);
   return await res.json();
 };
 
 export const getAllSexes = async () => {
-  const res = await fetch("http://localhost:8088/sexes");
+  const res = await fetch(`${API}/sexes`);
   return await res.json();
 };
 
 export const deleteCat = async (id) => {
-  const res = await fetch(`http://localhost:8088/cats/${id}`, {
+  const res = await fetch(`${API}/cats/${id}`, {
     method: "DELETE",
   });
 
@@ -41,7 +43,7 @@ export const deleteCat = async (id) => {
 };
 
 export const updateCat = (cat) => {
-  return fetch(`http://localhost:8088/cats/${cat.id}`, {
+  return fetch(`${API}/cats/${cat.id}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
@@ -51,9 +53,7 @@ export const updateCat = (cat) => {
 };
 
 export const getCaretakerCats = async () => {
-  const res = await fetch(
-    "http://localhost:8088/caretakerCats?_expand=caretaker"
-  );
+  const res = await fetch(`${API}/caretakerCats?_expand=caretaker`);
 
   if (!res.ok) {
     throw new Error("Failed to fetch caretakerCats.");
@@ -63,7 +63,7 @@ export const getCaretakerCats = async () => {
 };
 
 export const addCaretakerCat = async (caretakerId, catId) => {
-  const res = await fetch("http://localhost:8088/caretakerCats", {
+  const res = await fetch(`${API}/caretakerCats`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -79,9 +79,9 @@ export const addCaretakerCat = async (caretakerId, catId) => {
 };
 
 export const removeCaretakerCat = async (caretakerId, catId) => {
-  // fetch the specific relationship
+  // fetch the relationship
   const res = await fetch(
-    `http://localhost:8088/caretakerCats?caretakerId=${caretakerId}&catId=${catId}`
+    `${API}/caretakerCats?caretakerId=${caretakerId}&catId=${catId}`
   );
 
   if (!res.ok) {
@@ -90,12 +90,12 @@ export const removeCaretakerCat = async (caretakerId, catId) => {
 
   const relationships = await res.json();
 
-  // delete the first (and only?) matching record
+  // delete the first (and only) matching record
   if (relationships.length > 0) {
     const relationshipId = relationships[0].id;
 
     const deleteRes = await fetch(
-      `http://localhost:8088/caretakerCats/${relationshipId}`,
+      `${API}/caretakerCats/${relationshipId}`,
       { method: "DELETE" }
     );
 
@@ -106,12 +106,12 @@ export const removeCaretakerCat = async (caretakerId, catId) => {
 };
 
 export const deleteCaretakerCatByCatId = async (catId) => {
-  const res = await fetch(`http://localhost:8088/caretakerCats?catId=${catId}`);
+  const res = await fetch(`${API}/caretakerCats?catId=${catId}`);
   const caretakerCats = await res.json();
 
   // Delete each one
   for (const relationship of caretakerCats) {
-    await fetch(`http://localhost:8088/caretakerCats/${relationship.id}`, {
+    await fetch(`${API}/caretakerCats/${relationship.id}`, {
       method: "DELETE",
     });
   }
