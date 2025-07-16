@@ -1,38 +1,38 @@
+const API = "https://bowies-friends-api.onrender.com";
 
 export const getAllCaretakers = () => {
-    return fetch("http://localhost:8088/caretakers")
-      .then((res) => res.json());
-  };
-  
-  export const getCaretakerById = (id) => {
-    return fetch(`http://localhost:8088/caretakers/${id}?_embed=cats`)
-      .then((res) => res.json());
-  };
-  
-  export const getCatsForCaretaker = (caretakerId) => {
-    return fetch(`http://localhost:8088/caretakerCats?caretakerId=${caretakerId}&_expand=cat`)
-      .then((res) => res.json());
-  };
+  return fetch(`${API}/caretakers`)
+    .then((res) => res.json());
+};
 
-  export const getCaretakerByEmail = async (email) => {
-    const res = await fetch(`http://localhost:8088/caretakers?email=${email}`);
-    const data = await res.json();
-    return data[0]; // assuming it returns an array
-  };
-  
+export const getCaretakerById = (id) => {
+  return fetch(`${API}/caretakers/${id}?_embed=cats`)
+    .then((res) => res.json());
+};
 
-  export const createCaretaker = (newCaretaker) => {
-  return fetch("http://localhost:8088/caretakers", {
+export const getCatsForCaretaker = (caretakerId) => {
+  return fetch(`${API}/caretakerCats?caretakerId=${caretakerId}&_expand=cat`)
+    .then((res) => res.json());
+};
+
+export const getCaretakerByEmail = async (email) => {
+  const res = await fetch(`${API}/caretakers?email=${email}`);
+  const data = await res.json();
+  return data[0]; // assuming it returns an array
+};
+
+export const createCaretaker = (newCaretaker) => {
+  return fetch(`${API}/caretakers`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
     },
     body: JSON.stringify(newCaretaker)
-  }).then(res => res.json())
-}
+  }).then(res => res.json());
+};
 
 export const deleteCaretaker = (id) => {
-  return fetch(`http://localhost:8088/caretakers/${id}`, {
+  return fetch(`${API}/caretakers/${id}`, {
     method: "DELETE",
     headers: {
       "Authorization": `Token ${localStorage.getItem("bowie_token")}`
@@ -40,9 +40,8 @@ export const deleteCaretaker = (id) => {
   });
 };
 
-
 export const updateCaretaker = async (id, updatedCaretaker) => {
-  const response = await fetch(`http://localhost:8088/caretakers/${id}`, {
+  const response = await fetch(`${API}/caretakers/${id}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
