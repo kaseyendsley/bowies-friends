@@ -31,7 +31,6 @@ export const App = () => {
         <Route path="/caretaker-list" element={<CaretakerList />} />
         <Route path="/caretaker-details/:id" element={<CaretakerDetails />} /> 
         <Route path="/caretaker-edit/:id" element={<CaretakerEdit />} />
-
         <Route path="/resources" element={<Resources />} />
         <Route path="/about" element={<About />} />
       </Routes>
