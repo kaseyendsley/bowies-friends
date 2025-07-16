@@ -1,4 +1,4 @@
-const API = "https://bowies-friends-api.onrender.com";
+const API = "https://bowies-friends.onrender.com";
 
 export const getUserByEmail = async (email) => {
   const response = await fetch(`${API}/caretakers?email=${email}`);

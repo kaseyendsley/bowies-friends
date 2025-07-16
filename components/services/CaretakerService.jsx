@@ -1,4 +1,4 @@
-const API = "https://bowies-friends-api.onrender.com";
+const API = "https://bowies-friends.onrender.com";
 
 export const getAllCaretakers = () => {
   return fetch(`${API}/caretakers`)

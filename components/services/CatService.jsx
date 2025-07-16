@@ -1,4 +1,4 @@
-const API = "https://bowies-friends-api.onrender.com";
+const API = "https://bowies-friends.onrender.com";
 
 export const getAllCats = () => {
   return fetch(`${API}/cats?_expand=color&_expand=sex`).then(
