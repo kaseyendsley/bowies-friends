@@ -1,51 +1,41 @@
-.cats-container {
-  padding: 20px;
-  max-width: 900px;
-  margin: 0 auto;
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+body,
+a,
+button,
+input,
+textarea,
+select,
+label,
+.navbar-link,
+.logout-btn {
+  cursor: url('/assets/pawicon.png'), auto !important;
 }
 
-.cats-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  list-style: none;
-  padding: 0;
+
+body {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+    url("/assets/bowiebackground.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  cursor: url('/assets/pawicon.png'), auto;
 }
 
-.cat-card {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  padding: 15px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.2s;
+a {
+  color: #62788c; 
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  box-shadow: inset 0 -2px 0 0 rgba(98, 120, 140, 0.45); 
+  transition: box-shadow 0.2s ease, color 0.2s ease;
 }
 
-.cat-card:hover {
-  transform: scale(1.03);
-}
 
-.cat-info {
-  font-weight: bold;
-  margin-bottom: 10px;
-  font-size: 1.1rem;
-  color: #555;
-}
-
-.cat-image {
-  width: 80px;      /* medium icon size */
-  height: 80px;
-  overflow: hidden;
-  margin: 0 auto 10px; /* center and add bottom margin */
-  border-radius: 50%;  /* circular image */
-  border: 2px solid #ddd;
-}
-
-.cat-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 50%;  /* make sure image is round inside container */
+h1 {
+font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
 }

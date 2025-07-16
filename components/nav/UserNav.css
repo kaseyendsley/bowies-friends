@@ -1,30 +1,71 @@
-.navbar {
+ @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+ 
+ .navbar,
+.navbar * {
+  cursor: url('/assets/pawicon.png'), auto !important;
+}
+
+.navbar-link,
+.navbar-logo,
+.logout-btn {
+  box-shadow: none !important;
+  border-bottom: none !important;
+}
+
+ 
+ .navbar {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    background-color: var(--dark);
+    background-color: white;
     margin: 0;
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.0rem 2rem;
     border-bottom: 3px solid var(--primary); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  }
-  
-  .navbar-list {
+  } 
+
+     .navbar-list {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
     width: 100%;
     margin: 0;
-  }
+   
+     }
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary);
+  text-decoration: none;
+   box-shadow: none !important;
+  border-bottom: none !important;
+  gap: 0.5rem;
+}
+
+.navbar-logo img {
+  height: 60px;
+  width: auto;
+    display: block; /* removes any extra space below the image */
+  box-shadow: none !important;
+  border-bottom: none !important;
+}
   
   .navbar-item {
     flex-basis: 20%;
     text-align: center;
+   
   }
   
   .navbar-link {
     text-decoration: none;
-    font-family: "Quicksand", sans-serif;
+   font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
     letter-spacing: 1px;
     color: var(--offWhite);
     display: inline-block;
@@ -40,4 +81,88 @@
   .navbar-logout {
     margin-left: auto;
   }
+  .logout-btn {
+    background: none;
+    border: none;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: var(--offWhite);
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 0.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
   
+  .logout-btn:hover {
+    color: var(--primary);
+    transform: scale(1.1);
+  }
+
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--offWhite);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-logo {
+    display: block;
+  }
+
+  .navbar-logo img {
+    height: 50px; /* slightly smaller on mobile */
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--offWhite);
+    cursor: pointer;
+  }
+
+  .navbar-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  .navbar-list.mobile.open {
+    display: flex;
+  }
+
+  .navbar-item {
+    text-align: left;
+    padding: 0.5rem 0;
+  }
+
+  .navbar-link, .logout-btn {
+    font-size: 24px;
+  }
+
+
+
+  .navbar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  /* spreads logo and hamburger */
+  width: 100%;
+}
+
+}

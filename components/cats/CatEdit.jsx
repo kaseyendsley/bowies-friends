@@ -1,17 +1,11 @@
-import { getCaretakerByEmail } from "../services/CaretakerService.jsx";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { getAllColors, getAllSexes, createCat } from "../services/CatService.jsx";
-import { useSound } from 'use-sound';
-import "./CatForm.css";
+import { useParams, useNavigate } from "react-router-dom";
+import { getAllColors, getAllSexes, getCatById, updateCat } from "../services/CatService.jsx";
+import "./CatForm.css"; // reuse the same styles
 
-export const CatForm = () => {
-  const [colors, setColors] = useState([]);
-  const [sexes, setSexes] = useState([]);
+export const CatEdit = () => {
+  const { id } = useParams(); // cat id comes from url
   const navigate = useNavigate();
-  const catSubmitSound = "/assets/sounds/catFormSubmit.mp3";
-  const [play] = useSound(catSubmitSound);
-
 
   const [formData, setFormData] = useState({
     name: "",
@@ -24,27 +18,31 @@ export const CatForm = () => {
     knownStreets: "",
     notes: "",
     url: "",
-    createdByUserId: JSON.parse(localStorage.getItem("bowie_user"))?.id || null
-
   });
 
+  const [colors, setColors] = useState([]);
+  const [sexes, setSexes] = useState([]);
   const [errors, setErrors] = useState({});
 
   useEffect(() => {
     getAllColors().then(setColors);
     getAllSexes().then(setSexes);
-  
-    const storedUser = JSON.parse(localStorage.getItem("bowie_user"));
-    const userEmail = storedUser?.email;
-    if (userEmail) {
-      getCaretakerByEmail(userEmail).then((caretaker) => {
-        setFormData(prev => ({
-          ...prev,
-          createdByUserId: caretaker.id
-        }));
+    getCatById(id).then((cat) => {
+      setFormData({
+        name: cat.name || "",
+        age: cat.age || "",
+        colorId: cat.colorId || "",
+        sexId: cat.sexId || "",
+        specialMarkings: cat.specialMarkings || "",
+        zipCode: cat.zipCode || "",
+        friendly: cat.friendly,
+        knownStreets: cat.knownStreets || "",
+        notes: cat.notes || "",
+        url: cat.url || "",
+        createdByUserId: cat.createdByUserId || null, 
       });
-    }
-  }, []);
+    });
+  }, [id]);
 
   const handleChange = (e) => {
     const { name, value, type } = e.target;
@@ -52,15 +50,15 @@ export const CatForm = () => {
       ...formData,
       [name]: type === "number" ? parseFloat(value) : value,
     });
-    setErrors({ ...errors, [name]: "" }); 
+    setErrors({ ...errors, [name]: "" });
   };
 
   const validateForm = () => {
     const newErrors = {};
     if (!formData.name.trim()) newErrors.name = "A name is required!";
-    if (!formData.age) newErrors.age = "Age is required! (It's okay to guess!)";
+    if (!formData.age) newErrors.age = "Age is required - it's okay to guess!";
     if (!formData.colorId) newErrors.colorId = "Color is required!";
-    if (!formData.sexId) newErrors.sexId = "Sex is required! (It's okay to guess!)";
+    if (!formData.sexId) newErrors.sexId = "Sex is required - it's okay to guess!";
     if (!formData.zipCode) newErrors.zipCode = "Zip Code is required!";
     if (formData.friendly === null) newErrors.friendly = "This field is required!";
     return newErrors;
@@ -76,22 +74,22 @@ export const CatForm = () => {
 
     const payload = {
       ...formData,
+      id: parseInt(id),
       age: parseFloat(formData.age),
       zipCode: parseInt(formData.zipCode),
       colorId: parseInt(formData.colorId),
       sexId: parseInt(formData.sexId),
     };
 
-    createCat(payload).then((createdCat) => {
-      play()
-      navigate(`/cat-details/${createdCat.id}`);
+    updateCat(payload).then(() => {
+      navigate(`/cat-details/${id}`);
     });
   };
 
   return (
     <div className="cat-form-container">
       <form className="cat-form" onSubmit={handleSubmit}>
-        <h2 className="form-heading">Log a New Cat</h2>
+        <h2 className="form-heading">Edit Cat</h2>
 
         <div className="form-group">
           <label>Name:
@@ -191,7 +189,7 @@ export const CatForm = () => {
           </label>
         </div>
 
-        <button type="submit" className="submit-button">Add Cat</button>
+        <button type="submit" className="submit-button">Save Changes</button>
       </form>
     </div>
   );

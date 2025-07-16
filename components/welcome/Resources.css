@@ -1,0 +1,33 @@
+.resources-container {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  max-width: 700px;
+  margin: 2rem auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.resources-title {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  margin-top: -10px;
+}
+
+.resources-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.resources-info {
+  font-size: 1.2rem;
+}
+
+.resources-link {
+  color: #3366cc;
+  text-decoration: underline;
+}
+
+.resources-link:hover {
+  color: #003399;
+}

@@ -4,7 +4,6 @@
     justify-content: center;
     align-items: center;
     padding: 40px 20px;
-    background-color: #f0f0f0; 
     min-height: 100vh; 
 }
 
@@ -26,13 +25,14 @@
 
 .cat-image {
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     height: auto;
     border-radius: 16px; 
     margin-bottom: 20px;
     object-fit: cover;
     transform: scale(0.8); 
     margin-bottom: -20px;
+    margin-top: -15px;
 }
 
 .cat-info {
@@ -73,4 +73,87 @@
   .back-to-cat-list-button:hover {
     background-color: #555;
   }
+  .cat-edit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
   
+  .cat-edit-button:hover {
+    background-color: #555;
+  }
+  
+  .cat-delete-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-family: Georgia, serif;
+  }
+  
+  .cat-delete-button:hover {
+    background-color: #555;
+    font-family: Georgia, serif;
+  }
+  .edit-delete-buttons {
+    text-align: center;
+
+  }
+
+  .caretaker-toggle {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* space between options */
+  margin-top: 0.5em;
+}
+
+.caretaker-toggle label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.3rem; 
+  font-weight: 500;
+}
+
+  .caretaker-submit-button {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-right: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 13px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-family: Georgia, serif;
+  }
+  
+  .caretaker-submit-button:hover {
+    background-color: #555;
+  }
+  .cat-caretakers {
+    text-align: center;
+  }
+
+h1 {
+  margin-top: -15px;
+}

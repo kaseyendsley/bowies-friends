@@ -1,3 +1,8 @@
+.caretaker-card,
+.caretaker-card * {
+  cursor: url('/assets/pawicon.png'), auto !important;
+}
+
 .caretakers-container {
     padding: 20px;
     max-width: 900px;
@@ -78,7 +83,7 @@
   }
   
   .caretaker-search-bar::placeholder {
-    font-size: 0.875rem;     
+    font-size: 0.8rem;     
     color: #888;             
     opacity: 1;             
   }
@@ -86,4 +91,30 @@
     text-decoration: none;
     color: inherit;
     display: block;
+  }
+
+  .pagination-button  .pagination-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+   .pagination-button:hover {
+    background-color: #555;
+  }
+
+  h1 {
+    background-color: white;  
+     display: inline-block;   
+  padding: 0.5em 0.5em;         
+  display: inline-block;       
+  border-radius: 5em; 
   }

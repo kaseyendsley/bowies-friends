@@ -1,3 +1,8 @@
+.cat-card,
+.cat-card * {
+  cursor: url('/assets/pawicon.png'), auto !important;
+}
+
 .cats-container {
   padding: 20px;
   max-width: 900px;
@@ -82,3 +87,32 @@
     opacity: 1;              
   }
   
+
+  .pagination-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+   .pagination-button:hover {
+    background-color: #555;
+  }
+
+
+.cats-intro {
+  background-color: white;      
+  padding: 0.2em 0.5em;         
+  display: inline-block;       
+} 
+
+h5 {
+margin-top: -10px;
+}

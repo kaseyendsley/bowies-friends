@@ -1,5 +1,5 @@
 .cat-form-container {
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 20px;
     background-color: #f9f9f9;
@@ -45,7 +45,8 @@
   textarea {
     height: 100px;
   }
-  
+
+
   fieldset {
     border: none;
     margin: 0;
@@ -56,6 +57,7 @@
     font-size: 16px;
     color: #555;
     margin-bottom: 5px;
+    text-align: center;
   }
   
   .submit-button {
@@ -68,6 +70,7 @@
     cursor: pointer;
     align-self: center;
     margin-top: 20px;
+    font-family: Georgia, serif;
   }
   
   .submit-button:hover {
@@ -79,10 +82,6 @@
     align-items: center;
     border: none;
     padding: 0;
-  }
-  
-  .friendly-fieldset legend {
-    margin-right: 10px;
   }
   
   .radio-buttons {

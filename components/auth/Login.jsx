@@ -1,9 +1,12 @@
-import { getUserByEmail } from "../services/UserService" 
+
 import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
+import { getUserByEmail } from "../services/UserService"
+import "./Login.css"
+
 
 export const Login = () => {
-    const [email, set] = useState("isabella.white@gmail.com")
+    const [email, set] = useState("example@login.com")
     const navigate = useNavigate()
   
     const handleLogin = (e) => {
@@ -13,7 +16,7 @@ export const Login = () => {
         if (foundUsers.length === 1) {
           const employee = foundUsers[0]
           localStorage.setItem(
-            "shepherd_user",
+            "bowie_user",
             JSON.stringify({
               id: employee.id,
               isAdmin: employee.isAdmin,
@@ -31,8 +34,8 @@ export const Login = () => {
       <main className="container-login">
         <section>
           <form className="form-login" onSubmit={handleLogin}>
-            <h1>Shepherd's Pie</h1>
-            <h2>Please sign in</h2>
+            <h1>Bowie's Friends</h1>
+            <h3>Please sign in:</h3>
             <fieldset>
               <div className="form-group">
                 <input

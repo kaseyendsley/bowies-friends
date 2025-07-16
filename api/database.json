@@ -93,17 +93,18 @@
   ],
   "cats": [
     {
-      "id": 1,
       "name": "Abu",
       "age": 6,
       "colorId": 4,
       "sexId": 1,
       "specialMarkings": "",
-      "zipCode": 10001,
+      "zipCode": 37206,
       "friendly": true,
-      "knownStreets": "",
-      "notes": "",
-      "url": "https://images.pexels.com/photos/1424687/pexels-photo-1424687.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "knownStreets": "Ordway Place",
+      "notes": "Ready for adoption ",
+      "url": "https://i.ibb.co/YFL87b3k/Abu.jpg",
+      "createdByUserId": 11,
+      "id": 1
     },
     {
       "id": 2,
@@ -111,12 +112,13 @@
       "age": 2,
       "colorId": 10,
       "sexId": 3,
-      "specialMarkings": "",
-      "zipCode": 10002,
+      "specialMarkings": "Black socks on Back feet",
+      "zipCode": 37206,
       "friendly": false,
-      "knownStreets": "",
+      "knownStreets": "Duggar Drive",
       "notes": "",
-      "url": "https://images.pexels.com/photos/127028/pexels-photo-127028.jpeg?auto=compress&cs=tinysrgb&w=1200"
+      "url": "https://images.pexels.com/photos/127028/pexels-photo-127028.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "createdByUserId": 3
     },
     {
       "id": 3,
@@ -125,11 +127,12 @@
       "colorId": 3,
       "sexId": 2,
       "specialMarkings": "White socks on feet",
-      "zipCode": 10003,
+      "zipCode": 37206,
       "friendly": true,
-      "knownStreets": "",
+      "knownStreets": "Rosebank Ave",
       "notes": "",
-      "url": "https://images.pexels.com/photos/208984/pexels-photo-208984.jpeg?auto=compress&cs=tinysrgb&w=1200"
+      "url": "https://images.pexels.com/photos/208984/pexels-photo-208984.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "createdByUserId": 2
     },
     {
       "id": 4,
@@ -142,20 +145,22 @@
       "friendly": false,
       "knownStreets": "Dickerson",
       "notes": "",
-      "url": "https://images.pexels.com/photos/982314/pexels-photo-982314.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      "url": "https://images.pexels.com/photos/982314/pexels-photo-982314.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "createdByUserId": 5
     },
     {
-      "id": 5,
       "name": "Felix",
-      "age": 4,
+      "age": 3,
       "colorId": 4,
       "sexId": 1,
-      "specialMarkings": "",
-      "zipCode": 10005,
+      "specialMarkings": "Left Ear Tipped",
+      "zipCode": 37115,
       "friendly": true,
-      "knownStreets": "",
-      "notes": "",
-      "url": "https://images.pexels.com/photos/2539094/pexels-photo-2539094.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "knownStreets": "Bellshire",
+      "notes": "He is working on being more friendly and is afraid of dogs. ",
+      "url": "https://images.pexels.com/photos/2539094/pexels-photo-2539094.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "createdByUserId": 4,
+      "id": 5
     },
     {
       "id": 6,
@@ -163,12 +168,13 @@
       "age": 2,
       "colorId": 8,
       "sexId": 4,
-      "specialMarkings": "",
-      "zipCode": 10006,
+      "specialMarkings": "White heart on chest",
+      "zipCode": 37115,
       "friendly": true,
-      "knownStreets": "",
+      "knownStreets": "Gallatin",
       "notes": "",
-      "url": "https://images.pexels.com/photos/31985124/pexels-photo-31985124/free-photo-of-close-up-portrait-of-a-calico-cat-by-window.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "url": "https://images.pexels.com/photos/31985124/pexels-photo-31985124/free-photo-of-close-up-portrait-of-a-calico-cat-by-window.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "createdByUserId": 2
     },
     {
       "id": 7,
@@ -177,11 +183,12 @@
       "colorId": 14,
       "sexId": 1,
       "specialMarkings": "",
-      "zipCode": 10007,
+      "zipCode": 37115,
       "friendly": false,
-      "knownStreets": "",
+      "knownStreets": "Hutson Ave",
       "notes": "",
-      "url": "https://images.pexels.com/photos/31965431/pexels-photo-31965431/free-photo-of-ginger-cat-resting-on-pavement-in-athens.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "url": "https://images.pexels.com/photos/31965431/pexels-photo-31965431/free-photo-of-ginger-cat-resting-on-pavement-in-athens.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "createdByUserId": 5
     },
     {
       "id": 8,
@@ -189,12 +196,13 @@
       "age": 4,
       "colorId": 16,
       "sexId": 3,
-      "specialMarkings": "",
-      "zipCode": 10008,
+      "specialMarkings": "Very fluffy",
+      "zipCode": 37211,
       "friendly": true,
-      "knownStreets": "",
+      "knownStreets": "Durrett Drive",
       "notes": "",
-      "url": "https://images.pexels.com/photos/3777620/pexels-photo-3777620.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "url": "https://images.pexels.com/photos/3777620/pexels-photo-3777620.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "createdByUserId": 5
     },
     {
       "id": 9,
@@ -203,11 +211,12 @@
       "colorId": 13,
       "sexId": 1,
       "specialMarkings": "",
-      "zipCode": 10009,
+      "zipCode": 37211,
       "friendly": false,
-      "knownStreets": "",
+      "knownStreets": "Bonerwood",
       "notes": "",
-      "url": "https://images.pexels.com/photos/18827666/pexels-photo-18827666/free-photo-of-photo-of-a-cat-on-the-grass.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "url": "https://images.pexels.com/photos/18827666/pexels-photo-18827666/free-photo-of-photo-of-a-cat-on-the-grass.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "createdByUserId": 2
     },
     {
       "id": 10,
@@ -215,12 +224,13 @@
       "age": 2,
       "colorId": 7,
       "sexId": 3,
-      "specialMarkings": "",
-      "zipCode": 10010,
+      "specialMarkings": "Right eye missing",
+      "zipCode": 37211,
       "friendly": true,
-      "knownStreets": "",
+      "knownStreets": "Thompson Lane",
       "notes": "",
-      "url": "https://images.pexels.com/photos/7335650/pexels-photo-7335650.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "url": "https://images.pexels.com/photos/7335650/pexels-photo-7335650.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "createdByUserId": 2
     },
     {
       "id": 11,
@@ -228,12 +238,13 @@
       "age": 3,
       "colorId": 11,
       "sexId": 2,
-      "specialMarkings": "",
-      "zipCode": 10011,
+      "specialMarkings": "Missing half of tail",
+      "zipCode": 37211,
       "friendly": true,
-      "knownStreets": "",
+      "knownStreets": "Ashley Dr",
       "notes": "",
-      "url": "https://images.pexels.com/photos/8230644/pexels-photo-8230644.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "url": "https://images.pexels.com/photos/8230644/pexels-photo-8230644.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "createdByUserId": 5
     },
     {
       "id": 12,
@@ -242,11 +253,12 @@
       "colorId": 15,
       "sexId": 3,
       "specialMarkings": "",
-      "zipCode": 10012,
+      "zipCode": 37211,
       "friendly": false,
-      "knownStreets": "",
-      "notes": "",
-      "url": "https://images.pexels.com/photos/12456798/pexels-photo-12456798.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "knownStreets": "Kinross Ave",
+      "notes": "Bella is very afraid of dogs",
+      "url": "https://images.pexels.com/photos/12456798/pexels-photo-12456798.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "createdByUserId": 5
     },
     {
       "id": 13,
@@ -255,11 +267,12 @@
       "colorId": 9,
       "sexId": 1,
       "specialMarkings": "",
-      "zipCode": 10013,
+      "zipCode": 37211,
       "friendly": true,
-      "knownStreets": "",
-      "notes": "",
-      "url": "https://images.pexels.com/photos/31950001/pexels-photo-31950001/free-photo-of-cute-british-shorthair-cat-indoors-with-plants.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "knownStreets": "Brewer Drive",
+      "notes": "Jack likes children",
+      "url": "https://images.pexels.com/photos/31950001/pexels-photo-31950001/free-photo-of-cute-british-shorthair-cat-indoors-with-plants.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "createdByUserId": 5
     },
     {
       "id": 14,
@@ -268,11 +281,12 @@
       "colorId": 12,
       "sexId": 3,
       "specialMarkings": "",
-      "zipCode": 10014,
+      "zipCode": 37211,
       "friendly": true,
-      "knownStreets": "",
+      "knownStreets": "Briarwood Drive",
       "notes": "",
-      "url": "https://images.pexels.com/photos/357141/pexels-photo-357141.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "url": "https://images.pexels.com/photos/357141/pexels-photo-357141.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "createdByUserId": 4
     },
     {
       "id": 15,
@@ -281,69 +295,198 @@
       "colorId": 2,
       "sexId": 1,
       "specialMarkings": "",
-      "zipCode": 10015,
+      "zipCode": 37211,
       "friendly": false,
-      "knownStreets": "",
+      "knownStreets": "Durrett Drive",
       "notes": "",
-      "url": "https://images.pexels.com/photos/7229998/pexels-photo-7229998.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "url": "https://images.pexels.com/photos/7229998/pexels-photo-7229998.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "createdByUserId": 4
+    },
+    {
+      "name": "Bridget",
+      "age": 2.4,
+      "colorId": 10,
+      "sexId": 4,
+      "specialMarkings": "Ear tip",
+      "zipCode": 37115,
+      "friendly": false,
+      "knownStreets": "Bellshire, Dickerson",
+      "notes": "",
+      "url": "https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "createdByUserId": 11,
+      "id": 16
+    },
+    {
+      "name": "Baxter",
+      "age": 2,
+      "colorId": 5,
+      "sexId": 2,
+      "specialMarkings": "",
+      "zipCode": 37115,
+      "friendly": true,
+      "knownStreets": "Bellshire",
+      "notes": "He does not like to be picked up. ",
+      "url": "https://images.pexels.com/photos/1741205/pexels-photo-1741205.jpeg",
+      "createdByUserId": 11,
+      "id": 17
     }
-
   ],
   "caretakers": [
     {
       "id": 1,
       "name": "Ava Green",
-      "zipCode": 10001,
+      "zipCode": 37206,
       "streetsServed": "",
       "phoneNumber": "555-111-2222",
       "specialSkills": "Good with Ferals",
       "active": true,
       "isLeadCaretaker": false,
-      "isAdmin": false
+      "isAdmin": false,
+      "email": "avagreen2001@hotmail.com",
+      "url": "https://images.pexels.com/photos/1310522/pexels-photo-1310522.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": 2,
       "name": "Ben Thomas",
-      "zipCode": 10002,
+      "zipCode": 37206,
       "streetsServed": "",
       "phoneNumber": "555-222-3333",
-      "specialSkills": "",
+      "specialSkills": "Fosters cats and dogs",
       "active": true,
       "isLeadCaretaker": true,
-      "isAdmin": false
+      "isAdmin": false,
+      "email": "benthomasiscool@gmail.com",
+      "url": "https://images.pexels.com/photos/1334945/pexels-photo-1334945.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": 3,
       "name": "Cara James",
-      "zipCode": 10003,
+      "zipCode": 37115,
       "streetsServed": "",
       "phoneNumber": "555-333-4444",
-      "specialSkills": "Fosters",
+      "specialSkills": "Fosters kittens",
       "active": true,
       "isLeadCaretaker": false,
-      "isAdmin": false
+      "isAdmin": false,
+      "email": "caramjames@yahoo.com",
+      "url": "https://images.pexels.com/photos/1085517/pexels-photo-1085517.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": 4,
       "name": "Daniel Lee",
-      "zipCode": 10004,
+      "zipCode": 37211,
       "streetsServed": "",
       "phoneNumber": "555-444-5555",
-      "specialSkills": "",
+      "specialSkills": "Medication administration, good with ferals",
       "active": true,
       "isLeadCaretaker": false,
-      "isAdmin": false
+      "isAdmin": false,
+      "email": "daniellee3@gmail.com",
+      "url": "https://images.pexels.com/photos/3970083/pexels-photo-3970083.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": 5,
       "name": "Ella Smith",
-      "zipCode": 10005,
+      "zipCode": 37211,
       "streetsServed": "McIver",
       "phoneNumber": "555-555-6666",
       "specialSkills": "",
       "active": true,
       "isLeadCaretaker": true,
-      "isAdmin": true
+      "isAdmin": true,
+      "email": "bballchamps07@gmail.com",
+      "url": "https://images.pexels.com/photos/674685/pexels-photo-674685.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+      "id": 6,
+      "name": "Marcus Henderson",
+      "zipCode": 37205,
+      "streetsServed": "",
+      "phoneNumber": "555-555-1234",
+      "specialSkills": "Feral cat trapping",
+      "active": true,
+      "isLeadCaretaker": false,
+      "isAdmin": false,
+      "email": "marcus.h@example.com",
+      "url": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+      "id": 7,
+      "name": "Lara Chen",
+      "zipCode": 37215,
+      "streetsServed": "",
+      "phoneNumber": "555-123-9876",
+      "specialSkills": "Medical and foster experience",
+      "active": false,
+      "isLeadCaretaker": false,
+      "isAdmin": false,
+      "email": "lara.chen@example.com",
+      "url": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+      "id": 8,
+      "name": "Devon Parker",
+      "zipCode": 37215,
+      "streetsServed": "",
+      "phoneNumber": "555-789-2222",
+      "specialSkills": "",
+      "active": false,
+      "isLeadCaretaker": false,
+      "isAdmin": false,
+      "email": "devonp@example.com",
+      "url": "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+      "name": "Edmond Wells",
+      "zipCode": 37205,
+      "streetsServed": "Vine Ridge Drive, Ransom Ave",
+      "phoneNumber": "615-123-4567",
+      "specialSkills": "Good with ferals, likes to foster",
+      "email": "Edmondw@gmail.com",
+      "url": "https://images.pexels.com/photos/3616501/pexels-photo-3616501.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "active": true,
+      "isLeadCaretaker": false,
+      "isAdmin": false,
+      "id": 9
+    },
+    {
+      "name": "Charlie West",
+      "zipCode": 37206,
+      "streetsServed": "McIver",
+      "phoneNumber": "1234567891",
+      "specialSkills": "karate ",
+      "email": "charliew@gmail.com",
+      "url": "https://images.pexels.com/photos/32037140/pexels-photo-32037140/free-photo-of-portrait-of-young-man-in-white-shirt.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "active": true,
+      "isLeadCaretaker": false,
+      "isAdmin": false,
+      "id": 10
+    },
+    {
+      "name": "Kasey Endsley",
+      "zipCode": 37115,
+      "streetsServed": "Dickerson Pike, Westchester Dr",
+      "phoneNumber": "6157535533",
+      "specialSkills": "Fostering, medication administration, socialization",
+      "email": "kaseyendsley@gmail.com",
+      "url": "https://i.ibb.co/s96JyhN2/IMG-3400.jpg",
+      "active": true,
+      "isLeadCaretaker": true,
+      "isAdmin": true,
+      "id": 11
+    },
+    {
+      "name": "Martha Sample",
+      "zipCode": 37211,
+      "streetsServed": "Boxwood Drive",
+      "phoneNumber": "123-456-7890",
+      "specialSkills": "Fostering",
+      "email": "example@login.com",
+      "url": "https://images.pexels.com/photos/3767418/pexels-photo-3767418.jpeg",
+      "active": true,
+      "isLeadCaretaker": false,
+      "isAdmin": false,
+      "id": 12
     }
   ],
   "caretakerCats": [
@@ -383,21 +526,6 @@
       "catId": 7
     },
     {
-      "id": 8,
-      "caretakerId": 4,
-      "catId": 8
-    },
-    {
-      "id": 9,
-      "caretakerId": 4,
-      "catId": 9
-    },
-    {
-      "id": 10,
-      "caretakerId": 4,
-      "catId": 10
-    },
-    {
       "id": 11,
       "caretakerId": 5,
       "catId": 11
@@ -421,6 +549,66 @@
       "id": 15,
       "caretakerId": 5,
       "catId": 15
+    },
+    {
+      "caretakerId": 4,
+      "catId": 8,
+      "id": 16
+    },
+    {
+      "caretakerId": 4,
+      "catId": 5,
+      "id": 18
+    },
+    {
+      "caretakerId": 4,
+      "catId": 7,
+      "id": 19
+    },
+    {
+      "caretakerId": 4,
+      "catId": 10,
+      "id": 21
+    },
+    {
+      "caretakerId": 9,
+      "catId": 12,
+      "id": 22
+    },
+    {
+      "caretakerId": 4,
+      "catId": 9,
+      "id": 23
+    },
+    {
+      "caretakerId": 4,
+      "catId": 1,
+      "id": 24
+    },
+    {
+      "caretakerId": 11,
+      "catId": 1,
+      "id": 25
+    },
+    {
+      "caretakerId": 11,
+      "catId": 2,
+      "id": 26
+    },
+    {
+      "caretakerId": 11,
+      "catId": 12,
+      "id": 27
+    },
+    {
+      "caretakerId": 12,
+      "catId": 10,
+      "id": 28
+    },
+    {
+      "caretakerId": 12,
+      "catId": 11,
+      "id": 29
     }
   ]
 }
