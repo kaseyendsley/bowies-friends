@@ -6,7 +6,7 @@ import "./Login.css"
 
 
 export const Login = () => {
-    const [email, set] = useState("")
+    const [email, set] = useState("example@login.com")
     const navigate = useNavigate()
   
     const handleLogin = (e) => {

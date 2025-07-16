@@ -3,13 +3,13 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { getAllColors, getAllSexes, createCat } from "../services/CatService.jsx";
 import { useSound } from 'use-sound';
-import catSubmitSound from '../assets/catFormSubmit.mp3';
 import "./CatForm.css";
 
 export const CatForm = () => {
   const [colors, setColors] = useState([]);
   const [sexes, setSexes] = useState([]);
   const navigate = useNavigate();
+  const catSubmitSound = "/assets/sounds/catFormSubmit.mp3";
   const [play] = useSound(catSubmitSound);
 
 

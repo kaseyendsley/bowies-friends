@@ -101,12 +101,7 @@
     color: var(--primary);
     transform: scale(1.1);
   }
-  
 
-
-
-
-/* ...existing styles... */
 
 .hamburger {
   display: none;

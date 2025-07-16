@@ -315,6 +315,20 @@
       "url": "https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "createdByUserId": 11,
       "id": 16
+    },
+    {
+      "name": "Baxter",
+      "age": 2,
+      "colorId": 5,
+      "sexId": 2,
+      "specialMarkings": "",
+      "zipCode": 37115,
+      "friendly": true,
+      "knownStreets": "Bellshire",
+      "notes": "He does not like to be picked up. ",
+      "url": "https://images.pexels.com/photos/1741205/pexels-photo-1741205.jpeg",
+      "createdByUserId": 11,
+      "id": 17
     }
   ],
   "caretakers": [
@@ -452,7 +466,7 @@
       "name": "Kasey Endsley",
       "zipCode": 37115,
       "streetsServed": "Dickerson Pike, Westchester Dr",
-      "phoneNumber": "6157533355",
+      "phoneNumber": "6157535533",
       "specialSkills": "Fostering, medication administration, socialization",
       "email": "kaseyendsley@gmail.com",
       "url": "https://i.ibb.co/s96JyhN2/IMG-3400.jpg",
@@ -460,6 +474,19 @@
       "isLeadCaretaker": true,
       "isAdmin": true,
       "id": 11
+    },
+    {
+      "name": "Martha Sample",
+      "zipCode": 37211,
+      "streetsServed": "Boxwood Drive",
+      "phoneNumber": "123-456-7890",
+      "specialSkills": "Fostering",
+      "email": "example@login.com",
+      "url": "https://images.pexels.com/photos/3767418/pexels-photo-3767418.jpeg",
+      "active": true,
+      "isLeadCaretaker": false,
+      "isAdmin": false,
+      "id": 12
     }
   ],
   "caretakerCats": [
@@ -572,6 +599,16 @@
       "caretakerId": 11,
       "catId": 12,
       "id": 27
+    },
+    {
+      "caretakerId": 12,
+      "catId": 10,
+      "id": 28
+    },
+    {
+      "caretakerId": 12,
+      "catId": 11,
+      "id": 29
     }
   ]
 }

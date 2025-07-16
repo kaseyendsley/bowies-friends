@@ -61,7 +61,7 @@ export const CaretakerEdit = () => {
     return;
   }
 
-  // destructure and exclude `cats` from originalData
+  // exclude `cats` from originalData
   const { cats, ...safeOriginalData } = originalData;
 
   const updatedCaretaker = {
