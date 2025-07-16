@@ -7,7 +7,7 @@ export const CaretakerEdit = () => {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  const [originalData, setOriginalData] = useState(null); // full object
+  const [originalData, setOriginalData] = useState(null); 
   const [formData, setFormData] = useState({
     zipCode: "",
     streetsServed: "",
@@ -22,7 +22,7 @@ export const CaretakerEdit = () => {
 
   useEffect(() => {
     getCaretakerById(id).then((caretaker) => {
-      setOriginalData(caretaker); // store full object
+      setOriginalData(caretaker); 
 
       setFormData({
         zipCode: caretaker.zipCode || "",
