@@ -6,7 +6,7 @@ import './About.css';
 export const About = () => {
     return (
       <div className="home-container">
-        <h1 className="rouge-script-regular">Introducing .... ✨<i>Her</i>✨</h1>
+       
         <img
         src="https://i.ibb.co/kgQNh3mQ/IMG-3260.jpg"
         alt="Bowie the cat sitting proudly"
