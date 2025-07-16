@@ -1,14 +1,42 @@
-Bowie's Friends - an application for community cats and the caretakers that love them.  
 
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Bowie's Friends 🐾
 
-Currently, two official plugins are available:
+Bowie's Friends is a CRUD application built for community cat caretakers to streamline care for community cats in their neighborhoods.  Built as my front end capstone project for Nashville Software School and inspired by my time working with animal control and our local TNR nonprofit, Pet Community Center, I hope to grow this project in time.  New to community cats and TNR (trap/neuter/return)?  [Find out more here!](hhttps://www.neighborhoodcats.org/how-to-tnr/getting-started/what-is-tnr)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# This application is deployed to GitHub Pages! 
 
-## Expanding the ESLint configuration
+And can be visited here:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+https://kaseyendsley.github.io/bowies-friends/
+```
+
+Once you load the page, please allow roughly one minute for the server to spin up.  Sometimes, it may take just a little bit longer (a page refresh or two may be necessary).  Using the set example email provided, please feel free to explore, add/remove cats to/from your care list, and upload new cats of your own!  
+(DISCLAIMER: All cats and caretakers present are represented by mock data!)
+
+---
+
+## Features
+
+- ✅ User Authentication (Register/Login)
+- 📝 Create, Read, Update, and Delete Cats, Caretakers, and Cat Lists
+- 👀 View All Cats and Cat Details
+- 🔦 Filter Cats by area, street, markings, etc
+
+---
+
+## Tech Stack
+
+### Frontend
+- React
+- JavaScript
+
+### Backend
+- A mock RESTful API is built using [`json-server`](https://github.com/typicode/json-server), which serves data from a custom `database.json` file.
+- This API is deployed on [Render](https://render.com), making the backend publicly accessible at `https://bowies-friends.onrender.com`.
+
+
+
+
+
